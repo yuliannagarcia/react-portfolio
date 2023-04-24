@@ -1,0 +1,18 @@
+.btn1 {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.btn1:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+  }

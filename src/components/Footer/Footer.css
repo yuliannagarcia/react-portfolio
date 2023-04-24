@@ -1,0 +1,40 @@
+footer {
+    background: var(--color-primary);
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    border-radius: 1rem;
+}
+
+footer a {
+    color: var(--color-bg);
+}
+
+
+.permalinks {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    left: 0rem;
+}
+
+.footer__copyright {
+    margin-top: 6rem;
+    margin-right: 1rem;
+    color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 1rem;
+}
+
+/* Media Queries for small devices*/
+@media screen and (max-width: 600px){
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
