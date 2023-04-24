@@ -25,13 +25,13 @@ const Contact = () => {
           <article className="contact__option">
             <HiOutlineMail className='icon'/>
             <h3>Email</h3>
-            <h4>Stephanie_es_ga@hotmail.co.uk</h4>
-            <a href="mailto:stephanie_es_ga@hotmail.co.uk">Send a message</a>     
+            <h4>Yuliannagarcia01@gmail.com</h4>
+            <a href="mailto:yuliannagarcia01@gmail.com">Send a message</a>     
           </article>
           <article className="contact__option">
             <MdPhonelinkRing className='icon'/>
             <h3>Phone</h3>
-            <h4>+447957147171</h4>  
+            <h4>+447908153032</h4>  
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>

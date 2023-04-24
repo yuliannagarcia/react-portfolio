@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import ME from '../../Assets/pic.png';
+import ME from '../../Assets/pic2.png';
 import {FaUniversity} from 'react-icons/fa'
 import {MdOutlineLocalGroceryStore} from 'react-icons/md'
 import {FaLaptopCode} from 'react-icons/fa'
