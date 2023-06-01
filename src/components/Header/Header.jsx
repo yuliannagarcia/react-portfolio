@@ -1,16 +1,18 @@
 import React from 'react';
 import './Header.css';
 import CTA from './CTA';
-import Me from '../../Assets/pic.png';
+import Me from '../../Assets/picofme.jpeg';
+import YuliannaGarcia from '../../Assets/name.png';
+
 
 const Header = () => {
   return (
     <header>
       <div id="Home" className="container header__container">
-        <h4>Hello I am</h4>
-        <h1>Yulianna</h1>
+         <h2>Hey, I am </h2>
+         <img src={YuliannaGarcia} alt="" className="Yulianna"/>
         <h4 className="text-light">
-          Aspiring Product Designer
+          A Product Designer
         </h4>
         <CTA/>
         <div className="me__background">

@@ -1,19 +1,38 @@
+.logo {
+    width: 25%;
+    height: 25%;
+  }
+
+.logo:hover {
+    transform: rotate(30deg);
+    border-radius: 10%;
+  }
+
 /*  Socials  */
 .socials {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 1rem;
-    bottom: 4rem;
-    font-size: 1.25rem;
+    position: fixed;
+    left: -5rem;
+    bottom: 9rem;
+    font-size: 2rem;
+    color: var(--color-primary);
 }
- 
+.socials a{
+    color: var(--color-primary-variant);
+}
+
+.socials a:hover{
+    color: var(--color-primary);
+}
 .socials::after {
     content: "";
     width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+    height: 1rem;
+    background: var(--color-primary-variant);
+    color: var(--color-primary-variant);
     pointer-events: none;
 }
+

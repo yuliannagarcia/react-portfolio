@@ -1,18 +1,91 @@
-.btn1 {
-    display: block;
-    margin: 0 auto;
-    width: max-content;
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
-    background: var(--color-primary);
-    color: var(--color-bg);
+.portfolio_container {
+    display: grid;
+    grid-template-columns: 26% 48% 26%;
+    gap: 1.5rem;
 }
 
-.btn1:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
+.portfolio_container2 {
+    display: grid;
+    grid-template-columns: 26% 48% 26%;
+    gap: 1.5rem;
+}
+
+.portfolio_item {
+    text-align: center;
+    align-self: end;
+}
+
+.portfolio_item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}*/
+
+.portfolio_item-image {
+    border-radius: 1.5rem;
+    height: 250%;
+    width: 190%; 
+    transition: var(--transition); 
+}
+
+.portfolio_item-image:nth-child(3) img{
+    width: 110%;
+    height: auto;
+}
+
+.portfolio_item-image:hover {
+    transform: scale(1.1);
+}
+
+.portfolio_item h3{
+    text-align: center;
+    color:  var(--color-primary-variant);
+    margin-top: 2%;
+}
+
+.portfolio_item h3:hover{
+    color:  var(--color-primary);
+}
+
+.portfolio_item a{
+    margin-top: 1%;
+    display: inline-block;
+    color:  var(--color-bg);
+    text-decoration: none;
     border-color: transparent;
-  }
+}
+
+.portfolio_item a:hover{
+    color:  var(--color-primary);
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+
+/* Media Queries for medium devices*/
+@media screen and (max-width: 1024px){
+    .portfolio_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .portfolio_container2 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+}
+
+/* Media Queries for small devices*/
+@media screen and (max-width: 600px){
+    .portfolio_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .portfolio_container2 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+
+}
+
+

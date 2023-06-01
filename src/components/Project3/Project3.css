@@ -1,0 +1,19 @@
+.Project3{
+    margin-top: 0;
+}
+.project3{
+    padding-top: 3rem;
+}
+
+.project3 h2{
+text-align: center;
+font-size: larger;
+text-size-adjust: auto;
+margin: 0 auto;
+margin-bottom: 2rem;
+}
+
+.project3 video{
+    border-radius: 1rem;
+}
+
