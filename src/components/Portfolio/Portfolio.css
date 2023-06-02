@@ -25,19 +25,19 @@
 }
 
 .portfolio_item-image:nth-child(1) img{
-    width: 100%;
-    height: auto;
+    width: 280px;
+    height: 333px;
     transition: var(--transition); 
 }
 .portfolio_item-image:nth-child(2) img{
-    width: 100%;
-    height: auto;
+    width: 518px;
+    height: 326px;
     transition: var(--transition); 
 }
 
 .portfolio_item-image:nth-child(3) img{
-    width: 110%;
-    height: auto;
+    width: 309px;
+    height: 325px;
     transition: var(--transition); 
 }
 
