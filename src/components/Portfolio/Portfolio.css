@@ -22,8 +22,8 @@
 
 .portfolio_item-image {
     border-radius: 1.5rem;
-    height: 250%;
-    width: 190%; 
+    width: 100%; 
+    height: auto;
     transition: var(--transition); 
 }
 
