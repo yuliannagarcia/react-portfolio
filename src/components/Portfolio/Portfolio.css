@@ -21,8 +21,16 @@
 }
 
 .portfolio_item-image {
-    border-radius: 1.5rem;
-    width: 100%; 
+    border-radius: 1.5rem; 
+}
+
+.portfolio_item-image:nth-child(1) img{
+    width: 100%;
+    height: auto;
+    transition: var(--transition); 
+}
+.portfolio_item-image:nth-child(2) img{
+    width: 100%;
     height: auto;
     transition: var(--transition); 
 }
@@ -30,6 +38,7 @@
 .portfolio_item-image:nth-child(3) img{
     width: 110%;
     height: auto;
+    transition: var(--transition); 
 }
 
 .portfolio_item-image:hover {
