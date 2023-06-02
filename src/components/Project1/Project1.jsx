@@ -8,7 +8,6 @@ import IMG5 from "../../Assets/competitor4.png";
 import IMG6 from "../../Assets/HAt.png";
 import IMG7 from "../../Assets/RA.png";
 import IMG8 from "../../Assets/Hat2.png";
-import IMG9 from "../../Assets/response.png";
 import IMG14 from "../../Assets/cardsortinghp.png";
 import IMG15 from "../../Assets/cardsortinghnvp.png";
 import IMG17 from "../../Assets/C8H.png";
@@ -37,7 +36,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { BsAlignCenter } from 'react-icons/bs';
 
 
 function Project1() {

@@ -3,7 +3,6 @@ import './Portfolio.css';
 import IMG1 from "../../Assets/IMG1.png";
 import IMG2 from "../../Assets/IMG2.png";
 import IMG3 from "../../Assets/IMG3.png";
-import { Link} from 'react-router-dom';
 
 const Portfolio = ({handleClick}) => {
 
