@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Avenir Next', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  background: var(--color-bg);
+  color: var(--color-grey);
+  line-height: 1.7;
+  background-size: 0.09rem;
+}
+
+:root { 
+  --color-bg:  #ECF4FE;
+  --color-bg-variant:#056e94;
+  --color-primary: #EB853B;
+  --color-primary-variant: #1F7A8C;
+  --color-box: #022B3A ;
+  --color-blue: #F2C58D;
+  --color-light: #F6F2EE;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* General Styles */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1, h2,h3, h4, h5 {
+  font-weight: 500;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8%;
+}
+
+section > h2, 
+section > h3 {
+  text-align: center;
+  color: var(--color-bg-variant);
+  margin-top: 2rem;
+}
+
+section > h3{
+  padding-top: 6%;
+}
+section > h2 {
+  color: var(--color-bg-variant);
+  margin-bottom: 2%;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-bg);
+  transition: var(--transition)
+}
+
+a:hover {
+  color: var(--color-bg);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  display: ruby-base-container;
+  color: #022B3A;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: var(--transition);
+  background-color: #022B3A;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  background: var(--color-bg);
+  color:  chocolate;
+  border: 1px solid chocolate;
+
+}
+
+.btn-primary {
+  background:#022B3A;
+  color: var(--color-bg);
+}
+
+img {
+  display: block; 
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries for medium devices*/
+@media screen and (max-width: 1024px){
+  .container{
+    width: var(--container-width-md);
+  }
+
+  section{
+    margin-top: 6rem;
+  }
+}
+
+/* Media Queries for small devices*/
+@media screen and (max-width: 600px){
+  .container{
+    width: var(--container-width-sm);
+  }
+
+  section > h2{
+    margin-bottom: 2rem;
+  }
+}
