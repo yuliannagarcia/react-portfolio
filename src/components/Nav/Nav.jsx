@@ -1,148 +1,80 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Nav.css';
-import {AiOutlineHome} from 'react-icons/ai';
-import {AiOutlineUser} from 'react-icons/ai';
-import {GiBrain} from 'react-icons/gi';
-import {AiOutlineFolderOpen} from 'react-icons/ai';
-import {MdOutlineMailOutline} from 'react-icons/md';
-import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { AiOutlineHome } from 'react-icons/ai';
+import { AiOutlineUser } from 'react-icons/ai';
+import { GiBrain } from 'react-icons/gi';
+import { AiOutlineFolderOpen } from 'react-icons/ai';
+import { MdOutlineMailOutline } from 'react-icons/md';
 
-const Nav = ({handleClick, selected, currentHref}) => {
-  const [activeNav, setActiveNav] = useState()
-  const handleNav = () => {
-    if (
-      (selected === 0 )
-    ) {
-      setActiveNav('#Home');
-    }
-    else if (
-      (selected === 1 )||
-      (selected === 2 )||
-      (selected === 3 )
-    ) {
-      setActiveNav('#Portfolio');
-    }
-    else if (
-      (selected === 4 )
-    ) {
-      setActiveNav('#About');
-    }
-    else if (
-      (selected === 5 )
-    ) {
-      setActiveNav('#Experience');
-    }
-    else if (
-      (selected === 6 )
-    ) {
-      setActiveNav('#Portfolio');
-    }
-    else if (
-      (selected === 7 )
-    ) {
-      setActiveNav('#Contact');
-    }
-    else if ( selected === undefined && 
-    (currentHref.includes('Project1')||
-    currentHref.includes('Project2')||
-    currentHref.includes('Project3'))
-    ) {
-      setActiveNav('#Portfolio');
-    }
-    else if ( selected === undefined && 
-      (currentHref.includes('Home')
-      )) {
-        setActiveNav('#Home');
-    }
-    else if ( selected === undefined && 
-      (currentHref.includes('About')
-      )) {
-        setActiveNav('#About');
-    }
-    else if ( selected === undefined && 
-      (currentHref.includes('Experience')
-      )) {
-        setActiveNav('#Experience');
-    }
-    else if ( selected === undefined && 
-      (currentHref.includes('Portfolio')
-      )) {
-        setActiveNav('#Portfolio');
-    }
-    else if ( selected === undefined && 
-      (currentHref.includes('Contact')
-      )) {
-        setActiveNav('#Contact');
-    }
-  };
+const Nav = () => {
+  const [activeNav, setActiveNav] = useState('#Header');
+  const location = useLocation();
 
-  const handleNavClick = (nav) => {
-    setActiveNav(nav);
+  const handleNavClick = (sectionId) => {
+    setActiveNav(sectionId); 
+    let element = document.querySelector(sectionId);
+    
+    if (window.location.pathname === '/' && element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+      });
+    } else {
+      window.history.pushState({}, '', '/');
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      setTimeout(() => {
+        element = document.querySelector(sectionId);
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth'
+        });
+      }, 100); 
+    }
   };
 
   useEffect(() => {
-    handleNav();
-  }, [selected, currentHref]);
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveNav(`#${entry.target.id}`);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.6,
+    });
+
+    const sections = document.querySelectorAll('section[id]');
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    if (location.pathname.startsWith('/Project')) {
+      setActiveNav(''); // Reset activeNav to prevent highlighting any navigation item
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [activeNav, location.pathname]); // Include location.pathname in the dependencies array
 
   return (
-      <nav>
-        <a href="#Home" onClick= {() => {handleNavClick('#Home'); handleClick(0);}} className={activeNav === '#Home' ? 'active' : ''}><AiOutlineHome/></a>
-        <a href="#About" onClick= {() => {handleNavClick('#About'); handleClick(4);}} className={activeNav === '#About' ? 'active' : ''}><AiOutlineUser/></a>
-        <a href="#Experience" onClick= {() => {handleNavClick('#Experience'); handleClick(5);}} className={activeNav === '#Experience' ? 'active' : ''}><GiBrain/></a>
-        <a href="#Portfolio" onClick= {() => {handleNavClick('#Portfolio'); handleClick(6);}} className={activeNav === '#Portfolio' ? 'active' : ''}><AiOutlineFolderOpen/></a>
-        <a href="#Contact" onClick= {() => {handleNavClick('#Contact'); handleClick(7);}} className={activeNav === '#Contact' ? 'active' : ''}><MdOutlineMailOutline/></a>
-      </nav>
-  )
-}
-export default Nav; 
+    <nav>
+      <Link to="/" onClick={() => handleNavClick('#Header')} className={activeNav === '#Header' ? 'active' : ''}><AiOutlineHome /></Link>
+      <Link to="/" onClick={() => handleNavClick('#About')} className={activeNav === '#About' ? 'active' : ''}><AiOutlineUser /></Link>
+      <Link to="/" onClick={() => handleNavClick('#Experience')} className={activeNav === '#Experience' ? 'active' : ''}><GiBrain /></Link>
+      <Link to="/" onClick={() => handleNavClick('#Portfolio')} className={activeNav === '#Portfolio' ? 'active' : ''}><AiOutlineFolderOpen /></Link>
+      <Link to="/" onClick={() => handleNavClick('#Contact')} className={activeNav === '#Contact' ? 'active' : ''}><MdOutlineMailOutline /></Link>
+    </nav>
+  );
+};
 
-/* import React, { useEffect } from 'react';
-import './Nav.css';
-import {AiOutlineHome} from 'react-icons/ai';
-import {AiOutlineUser} from 'react-icons/ai';
-import {GiBrain} from 'react-icons/gi';
-import {AiOutlineFolderOpen} from 'react-icons/ai';
-import {MdOutlineMailOutline} from 'react-icons/md';
-import { useState } from 'react';
-import { Link } from 'react-scroll';
+export default Nav;
 
-const Nav = ({location}) => {
-  const [activeNav, setActiveNav] = useState()
-
-  const handleNavClick = (nav) => {
-    setActiveNav(nav);
-  };
-
-  useEffect(() => {
-    handleNav();
-  }, [location.pathname]);
-
-  const handleNav = () => {
-    if (location.pathname === '/'){
-      setActiveNav('/');
-    }
-    else if (location.pathname === '/About'){
-      setActiveNav('/About');
-    }
-    else if (location.pathname === '/Experience'){
-      setActiveNav('/Experience');
-    }
-    else if (location.pathname === '/Portfolio'||location.pathname === '/Project1'||location.pathname === '/Project2'||location.pathname === '/Project3'){
-      setActiveNav('/Portfolio');
-    }
-    else if (location.pathname === '/Contact'){
-      setActiveNav('/Contact');
-    }
-  };
-
-  return (
-      <nav>
-        <Link to="Home" onClick= {() => handleNavClick('/')} ><a className={activeNav === '/' ? 'active' : ''}><AiOutlineHome/></a></Link>
-        <Link to="About" onClick= {() => handleNavClick('/About')}><a className={activeNav === '/About' ? 'active' : ''}><AiOutlineUser/></a></Link>
-        <Link to="Experience" onClick= {() => handleNavClick('/Experience')} ><a className={activeNav === '/Experience' ? 'active' : ''}><GiBrain/></a></Link>
-        <Link to="Portfolio" onClick= {() => handleNavClick('/Portfolio')}><a  className={activeNav === '/Portfolio' ? 'active' : ''}><AiOutlineFolderOpen/></a></Link>
-        <Link to="Contact" onClick= {() => handleNavClick('/Contact')} ><a className={activeNav === '/Contact' ? 'active' : ''}><MdOutlineMailOutline/></a></Link>
-      </nav>
-  )
-}
-export default Nav; */
