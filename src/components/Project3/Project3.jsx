@@ -23,16 +23,19 @@ import MMML from "../../Assets/monster-two-thirds-left.png";
 import MMMR from "../../Assets/monster-two-thirds-right.png";
 import MMML2 from "../../Assets/monster-one-third-left.png";
 import MMMR2 from "../../Assets/monster-one-third-right.png";
-
+import MMHP from "../../Assets/homePageMM.mp4";
+import MMRL from "../../Assets/registerPage.mp4";
+import MMCD from "../../Assets/childDashboard.mp4";
+import MMGD from "../../Assets/grownupDashboard.mp4";
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-// import Swiper core and required modules
-// import { Navigation, Pagination } from 'swiper';
+//import Swiper core and required modules
+import { Navigation, Pagination } from 'swiper';
 
-// import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -68,7 +71,7 @@ function Project3() {
             Our app must be easy to navigate by adults and children. It should comply with UX methodologies
           </p>
         </div>
-        {/* <video src={MMHP} className="homepagedemo" controls /> */}
+        <video src={MMHP} className="homepagedemo" controls />
       </div>
 
 
@@ -273,7 +276,7 @@ function Project3() {
         <img src={MMTR} alt="" class="monster-image two-thirds-right" />
 
       </div>
-      {/* <div className="mm-navigation">
+      <div className="mm-navigation">
 
         <h5>App Navigation</h5>
         <Swiper style={{ paddingBottom: '100px' }} pagination={true} navigation={true} modules={[Pagination, Navigation]} className='responses'>
@@ -291,7 +294,7 @@ function Project3() {
           </SwiperSlide>
         </Swiper>
 
-      </div> */}
+      </div>
       <div class="page-wrapper position-relative">
         <img src={MMML2} alt="" class="monster-image three-thirds-left " />
         <img src={MMMR2} alt="" class="monster-image three-thirds-right" />
