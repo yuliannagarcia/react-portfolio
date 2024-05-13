@@ -14,7 +14,6 @@ const About = () => {
         <div className="about__me">
           <img src={ME} alt="About" />
         </div>
-
         <div className="about__content">
           <div className="about__cards">
             <article className='about__card'>
@@ -29,7 +28,6 @@ const About = () => {
                 </ul>
               </h5>
             </article>
-
             <article className='about__card'>
               <MdOutlineLocalGroceryStore className='about__icon' />
               <h4>Projects</h4>
@@ -39,7 +37,6 @@ const About = () => {
                 <li>Created a responsive Mood tracking app for children using UX skills, Python, Javascript, HTML and CSS</li>
               </ul>
             </article>
-
             <article className='about__card'>
               <FaLaptopCode className='about__icon' />
               <h4>Personal Projects</h4>

@@ -25,20 +25,10 @@
     color: var(--color-box);
 }
 
-@media (max-width: 768px) {
-    /* Adjust the layout for smaller screens */
-    .Project1_brief {
-        grid-template-columns: 100%; /* Display the columns as a single column */
-        left: 0; /* Reset the left positioning */
-        padding-left: 0;
-        margin-left: 0;
-    }
-    }
-    
-    .Project1_brief_img {
+.Project1_brief_img {
         width: 100%; /* Make the image span the full width of the container */
         margin-left: 0; /* Reset the margin */
-    }
+}
 
 
 .brief{
@@ -74,27 +64,23 @@
     margin: 0;
 }
 
-.containerfeature{
-    font-size: .8;
-    margin-left: 1rem;
-    margin-right: 2rem;
-}
+
 
 .features{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
 }
 
 .caf_container {
-        position:relative;
-        left: -12.5vw;
-        width: 100vw;
-        height:auto;
         background-color: #ffee0026;
         border: 2px solid ;
         border-color: #c1a06800;
         color: var(--color-box);
         padding-bottom: 0rem;
+        justify-content: flex-start;
+        position:relative;
+        left: -12.5vw;
+        width: 100vw;
 }
 
 .caf_container h5{
@@ -109,6 +95,17 @@
     margin-top: .5;
     text-align: left;
 }
+.caf_container2{
+    width: 100vw;
+    height:auto;
+    justify-content: start;
+}
+
+
+/* .cacontainer{
+    display: flex;
+    
+} */
 
 .competitoranalysis1_img {
     margin-top: -5;
@@ -119,7 +116,6 @@
     transition: transform 1s ease;
 }
 
-
 .competitoranalysis2_img {
     width: 65%;
     height: auto;
@@ -128,6 +124,13 @@
     transition: transform 1s ease;
 }
 
+.Project1_homelessLink_image {
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: transform 1s ease;
+
+}
 
 .red_route_analysis h5 {
     font-size: 1.8em;
@@ -526,246 +529,38 @@ video {
   
 }
 
-/* .Project1-image2 {
-    margin: 0 auto;
-    height: 100px;
-    width: 600px;
-    transform: scale(0.6);
-    padding-top: 5rem;
+
+@media (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+    .Project1_brief {
+        grid-template-columns: 100%; /* Display the columns as a single column */
+        left: 0; /* Reset the left positioning */
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+  
    
-}
+    .features {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
 
+    .caf_container {
+        position: static; /* Reset the positioning */
+        width: 100%; /* Set width to full width of the viewport */
+        left: 0; /* Reset the left positioning */
+        margin-left: 0; /* Reset the left margin */
+        margin-right: 0; /* Reset the right margin */
+    }
 
-.container h2 {
-    text-align: center;
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-}
+    .competitoranalysis1_img,
+    .competitoranalysis2_img,
+    .Project1_homelessLink_image {
+        width: 100%; /* Make images fill the container width */
+    }
 
-
-.Project1_container h4 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    margin-right: 6rem;
-    text-align: justify;
-}
-
-.Project1_container p {
-    padding-bottom: .75rem;
-    text-align: justify;
-}
-
-
-
-.Project1_image {
-    align-content: center;
-    justify-items: center;
-    border-radius: 5rem;
-    height: 330px;
-    width: 290px;
-}
-
-.Project1_image img{
-    border-radius: 1rem;
-    overflow:hidden;
-    height: 290px;
-    width: 240px;
-    margin-top: 2rem;
-    transition: var(--transition);
-}
-
-.Project1_image3{
-    align-content: center;
-    justify-items: center;
-    overflow:hidden; 
-    height: 350px;
-    width: 260px;
-    margin: 0 auto;
-    transform: scale(1.5);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    transition: var(--transition);
-    border-radius: 5rem;
-}
-
-h5 {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    margin-right: 0rem;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.caf_container h4 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    margin-right: 0rem;
-    text-align: center;
-    font-size: .9rem;
-}
-
-.caf_container p {
-    padding-bottom: .5rem;
-    text-align: justify;
-}
-
-
-.Project1_image4{
-    transform: scale(1);
-    justify-items: center;
-}
-
-
-.Project1_image5{
-    transform: scale(1);
-    justify-items: center;
-}
-
-
-.Project1_image6{
-    transform: scale(.9);
-    justify-items: center;
-    height: 350px;
-    width: 550px;
-}
-
-.Project1_image7{
-    transform: scale(.9);
-    height: 350px;
-    width: 555px;
-    justify-items: center;
-}
-
-.Project1_image8{
-    transform: scale(.5);
-    justify-items: center;
-}
-
-
-.RRA_container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.Project1_image9{
-    transform: scale(1);
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.Survey_container {
-    display: grid;
-    align-items: start;
-}
-
-
-.Project1_image12{
-    transform: scale(.7);
-    justify-items: center;
-    height: 250px;
-    width: 700px;
-}
-
-.Project1_image13{
-    transform: scale(.5);
-    justify-items: center;
-    height: 250px;
-    width: 1000px;
-}
-
-.Survey2_container {
-    justify-items: center;
-    padding-left: 5rem;
-    padding-right: 0rem;
-    display: grid;
-    grid-template-columns: 50% 50%; 
-}
-
-.Project1_image13{
-    align-content: center;
-    transform: scale(.5);
-    justify-items: center;
-    height: 270px;
-    width: 500px;
-}
-
-.Project1_image14{
-    transform: scale(.7);
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.Project1_image15{
-    transform: scale(.2);
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.Project1_image16{
-    transform: scale(1);
-    align-self: start;
-}
-
-.ideation_container {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    align-items: start;
-}
-
-.Project1_image17{
-    transform: scale(1);
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.Project1_image18{
-    transform: scale(1);
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.Project1_image19{
-    transform: scale(1);
-    align-self: start;
-}
-
-.ideation_container2 {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    align-items: start;
-}
- 
-.Project1_image20{
-    transform: scale(.8);
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
-    align-items: start;
 
 }
-
-.lowfidelitywireframe_container {
-    display: grid;
-    align-items: start;
-}
-
-
-
-.Project1_image22{
-    transform: scale(1);
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
-    align-items: start;
-
-}
-
-video {
-    display: block;
-    margin: 0 auto;
-  } */
+    
