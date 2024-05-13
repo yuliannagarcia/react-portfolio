@@ -1,4 +1,4 @@
-.about__container { 
+.about__container {
     display: grid;
     grid-template-columns: 29% 70%;
     margin-bottom: 5rem;
@@ -13,12 +13,12 @@
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.about__me img{
+.about__me img {
     border-radius: 20rem 20rem 1rem 1rem;
     transform-origin: center;
     transition: transform 0.9s ease-out;
     margin: 0 auto;
-} 
+}
 
 .about__me:hover img {
     transform: scale(1.1);
@@ -40,16 +40,16 @@
 
 .about__card:nth-child(1),
 .about__card:nth-child(3) {
-    background-color:   var(--color-blue); 
+    background-color: var(--color-blue);
     border-color: var(--color-blue);
-    color:  var(--color-bg-variant);
+    color: var(--color-bg-variant);
 }
-  
+
 .about__card:nth-child(2) {
-    background-color:#022B3A; 
+    background-color: #022B3A;
     border-color: #022B3A;
-    color: var(--color-light);  
-} 
+    color: var(--color-light);
+}
 
 .about__card:hover {
     background: transparent;
@@ -58,15 +58,15 @@
     color: var(--color-primary-variant);
 }
 
-.about__card:hover h4{
+.about__card:hover h4 {
     color: var(--color-primary-variant);
 }
 
-.about__card:hover h5{
+.about__card:hover h5 {
     color: var(--color-primary-variant);
 }
 
-.about__card ul{
+.about__card ul {
     padding-inline-start: 20px;
     list-style-type: disc;
     text-align: left;
@@ -93,7 +93,8 @@
 }
 
 .about__card:nth-child(2):hover h5 {
-    color: var(--color-primary-variant); /* Replace with the desired hover color */
+    color: var(--color-primary-variant);
+    /* Replace with the desired hover color */
 }
 
 .about__card:nth-child(3) h5 {
@@ -119,7 +120,7 @@
 
     .about__content p {
         margin: 1rem 0 1.5rem;
-    }    
+    }
 }
 
 /* Media Queries for small devices */
@@ -137,13 +138,13 @@
         display: flex;
         align-items: center;
         display: flex;
-        flex-direction: column;       
+        flex-direction: column;
     }
 
     .about__card {
-        width: 16rem;      
+        width: 16rem;
     }
-    
+
     .about__content {
         text-align: center;
     }
@@ -152,7 +153,7 @@
         margin: 1.5rem 0;
     }
 
-    .about__me img{
+    .about__me img {
         height: 90%;
         width: 100%;
         border-radius: 10rem 10rem 1rem 1rem;

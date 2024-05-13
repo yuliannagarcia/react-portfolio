@@ -23,7 +23,7 @@
     color: var(--color-primary);
 }
 
-.contact__option a{
+.contact__option a {
     text-decoration: none;
 }
 
@@ -50,7 +50,8 @@
 
 
 
-section h4,h3 {
+section h4,
+h3 {
     color: var(--color-white);
     margin-top: 0rem;
 }
@@ -58,16 +59,17 @@ section h4,h3 {
 .icon {
     color: var(--color-primary);
     font-size: 1.5rem;
- }
+}
 
- /* Form */
- form {
+/* Form */
+form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
- }
+}
 
- input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -78,8 +80,8 @@ section h4,h3 {
     font-family: 'Poppins', sans-serif;
 }
 
- /* Media Queries for medium devices*/
- @media screen and (max-width: 1024px){
+/* Media Queries for medium devices*/
+@media screen and (max-width: 1024px) {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -87,9 +89,8 @@ section h4,h3 {
 }
 
 /* Media Queries for small devices*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .container.contact__container {
         width: var(--container-width-sm);
     }
 }
- 

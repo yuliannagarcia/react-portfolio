@@ -8,7 +8,8 @@
     margin-bottom: 5%;
 }
 
-.header__container h4, h2 {
+.header__container h4,
+h2 {
     margin-top: 1%;
     margin-bottom: 0%;
     text-align: center;
@@ -17,10 +18,10 @@
 }
 
 .header__container h2 {
-    color:#022B3A;
+    color: #022B3A;
 }
 
-.header__container h1{
+.header__container h1 {
     margin-bottom: 0%;
     text-align: center;
     font-size: 4rem;
@@ -38,7 +39,7 @@
     margin-top: 2%;
 }
 
-.cta a{
+.cta a {
     text-decoration: none;
 }
 
@@ -54,7 +55,8 @@
     margin: 0 auto;
     margin-top: 4.5%;
 }
-.Yulianna{
+
+.Yulianna {
     width: 28%;
     height: auto;
     margin: 2% auto 2%;
@@ -68,7 +70,7 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(transition);
-    
+
 }
 
 .me__image:hover {
@@ -80,43 +82,43 @@
 
 
 /* Media Queries for medium devices*/
-@media screen and (max-width: 1024px){
-    
-}
+@media screen and (max-width: 1024px) {}
 
 /* Media Queries for small devices*/
-@media screen and (max-width: 600px){ 
+@media screen and (max-width: 600px) {
+
     /* image */
-.me__background {
-    height: 34%;
-    width: 50%;
-    border-radius: 2rem;
-    background: #022B3A;
-    display: grid;
-    place-items: center;
-    margin: 0 auto;
-    margin-top: 20%;
-    margin-bottom: -20%;
-}
-.Yulianna{
-    width: 28%;
-    height: auto;
-    margin: 5% auto 5%;
-}
+    .me__background {
+        height: 34%;
+        width: 50%;
+        border-radius: 2rem;
+        background: #022B3A;
+        display: grid;
+        place-items: center;
+        margin: 0 auto;
+        margin-top: 20%;
+        margin-bottom: -20%;
+    }
+
+    .Yulianna {
+        width: 28%;
+        height: auto;
+        margin: 5% auto 5%;
+    }
 
 
-.me__image {
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(10deg);
-    transition: var(transition);
-}
+    .me__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        overflow: hidden;
+        transform: rotate(10deg);
+        transition: var(transition);
+    }
 
-.me__image:hover {
-    transform: rotate(0deg);
-}
+    .me__image:hover {
+        transform: rotate(0deg);
+    }
 
 
 }

@@ -46,7 +46,7 @@ import 'swiper/css/scrollbar';
 
 function Project3() {
   return (
-    <div className='Project3 page-wrapper position-relative'>
+    <section id="Project3" className='Project3 page-wrapper position-relative'>
 
       <div class="col-lg-10 col-md-8 pb-5">
         <h1 class="monster-text text-content titles text-center"><span class="colour-6">Mood</span> <span class="colour-5">Monsters</span></h1>
@@ -301,7 +301,7 @@ function Project3() {
 
       </div>
 
-    </div>
+    </section>
 
   )
 }

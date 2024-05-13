@@ -1,15 +1,15 @@
-
-
 .logo:hover {
     transform: rotate(30deg);
     border-radius: 10%;
-  }
+}
 
-  .logo {
+.logo {
     width: 25%;
     height: 25%;
-    position: relative; /* Add relative positioning */
-    z-index: 2; /* Set z-index to bring it to the front */
+    position: relative;
+    /* Add relative positioning */
+    z-index: 2;
+    /* Set z-index to bring it to the front */
 }
 
 .socials {
@@ -22,15 +22,18 @@
     bottom: 9rem;
     font-size: 2rem;
     color: var(--color-primary);
-    z-index: 1; /* Set z-index to ensure it's behind the logo */
+    z-index: 1;
+    /* Set z-index to ensure it's behind the logo */
 }
-.socials a{
+
+.socials a {
     color: var(--color-primary-variant);
 }
 
-.socials a:hover{
+.socials a:hover {
     color: var(--color-primary);
 }
+
 .socials::after {
     content: "";
     width: 1px;
@@ -44,12 +47,12 @@
 @media screen and (max-width: 1024px) {
     .socials {
         display: none;
-     }
+    }
 }
 
 @media screen and (max-width: 576px) {
     .socials {
-       display: none;
+        display: none;
     }
 
 }

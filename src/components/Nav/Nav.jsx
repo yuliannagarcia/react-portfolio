@@ -12,9 +12,9 @@ const Nav = () => {
   const location = useLocation();
 
   const handleNavClick = (sectionId) => {
-    setActiveNav(sectionId); 
+    setActiveNav(sectionId);
     let element = document.querySelector(sectionId);
-    
+
     if (window.location.pathname === '/' && element) {
       window.scrollTo({
         top: element.offsetTop,
@@ -32,7 +32,7 @@ const Nav = () => {
           top: element.offsetTop,
           behavior: 'smooth'
         });
-      }, 100); 
+      }, 100);
     }
   };
 

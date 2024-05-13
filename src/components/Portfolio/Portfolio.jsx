@@ -28,7 +28,6 @@ const Portfolio = () => {
           </Link>
           <article className="">
             <Link to="/Project1" onClick={scrollToTop}>Thy Neighbour App</Link>
-            {/* <Link className="btn btn-primary portfolio-btn" to="/Project1" onClick={scrollToTop}>View</Link> */}
           </article>
         </div>
         <div className="portfolio_item">
@@ -39,7 +38,6 @@ const Portfolio = () => {
           </Link>
           <article className="">
             <Link to="/Project2" onClick={scrollToTop}>ASOS Redesign</Link>
-            {/* <Link className="btn btn-primary portfolio-btn" to="/Project2" onClick={scrollToTop}>View</Link> */}
           </article>
         </div>
         <div className="portfolio_item">
@@ -50,7 +48,6 @@ const Portfolio = () => {
           </Link>
           <article className="">
             <Link to="/Project3" onClick={scrollToTop}>Mood Monsters</Link>
-            {/* <Link className="btn btn-primary portfolio-btn" to="/Project3" onClick={scrollToTop}>View</Link> */}
           </article>
         </div>
         <div className="portfolio_item">
@@ -61,7 +58,6 @@ const Portfolio = () => {
           </Link>
           <article className="">
             <Link to="/Project4" onClick={scrollToTop}>Personal Design Projects</Link>
-            {/* <Link className="btn btn-primary portfolio-btn" to="/Project4" onClick={scrollToTop}>View</Link> */}
           </article>
         </div>
       </div>

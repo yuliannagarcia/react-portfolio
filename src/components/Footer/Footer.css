@@ -1,5 +1,5 @@
 footer {
-    background: var( --color-blue);
+    background: var(--color-blue);
     text-align: right;
     font-size: 1.5rem;
     margin-top: 0.5rem;
@@ -25,7 +25,7 @@ footer small {
 }
 
 /* Media Queries for small devices*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .permalinks {
         flex-direction: column;
         gap: 1.5rem;
