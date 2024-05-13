@@ -1,6 +1,7 @@
 .project4{
     margin-top: 0;
     padding-top: 3rem;
+    min-height: 92vh;
 }
 
 .project4 h2{
@@ -14,23 +15,17 @@
 .project4 video{
     border-radius: 1rem;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 /* Media Queries for small devices*/
 @media screen and (max-width: 600px){
 
-    .project4 video{
-        margin-bottom: 16rem;
-    }
 
 }
 
 /* Media Queries for small small devices*/
 @media screen and (max-width: 415px){
 
-    .project4 video{
-        margin-bottom: 26rem;
-    }
 
 }
