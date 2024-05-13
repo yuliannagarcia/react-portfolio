@@ -1,0 +1,36 @@
+.project4{
+    margin-top: 0;
+    padding-top: 3rem;
+}
+
+.project4 h2{
+    text-align: center;
+    font-size: larger;
+    text-size-adjust: auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.project4 video{
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+/* Media Queries for small devices*/
+@media screen and (max-width: 600px){
+
+    .project4 video{
+        margin-bottom: 16rem;
+    }
+
+}
+
+/* Media Queries for small small devices*/
+@media screen and (max-width: 415px){
+
+    .project4 video{
+        margin-bottom: 26rem;
+    }
+
+}
