@@ -14,7 +14,6 @@ const About = () => {
         <div className="about__me">
           <img src={ME} alt="About" />
         </div>
-        <div className="about__content">
           <div className="about__cards">
             <article className='about__card'>
               <FaUniversity className='about__icon' />
@@ -31,11 +30,13 @@ const About = () => {
             <article className='about__card'>
               <MdOutlineLocalGroceryStore className='about__icon' />
               <h4>Projects</h4>
-              <ul>
-                <li>Designed a Responsive E-Commerce apps with Figma </li>
-                <li>Designed volunteering app to help the homeless using Figma </li>
-                <li>Created a responsive Mood tracking app for children using UX skills, Python, Javascript, HTML and CSS</li>
-              </ul>
+              <h5>
+                <ul>
+                  <li>Designed a Responsive E-Commerce apps with Figma </li>
+                  <li>Designed volunteering app to help the homeless using Figma </li>
+                  <li>Created a responsive Mood tracking app for children using UX skills, Python, Javascript, HTML and CSS</li>
+                </ul>
+              </h5>
             </article>
             <article className='about__card'>
               <FaLaptopCode className='about__icon' />
@@ -49,7 +50,6 @@ const About = () => {
                 </ul>
               </h5>
             </article>
-          </div>
         </div>
       </div>
     </section>
