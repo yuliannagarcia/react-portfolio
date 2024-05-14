@@ -47,7 +47,7 @@ function Project1() {
                         A Homeless App
                     </h2>
 
-                    <div className='Project1_brief' style={{ margin: 0, padding: 0, width: '100vw' }}>
+                    <div className='Project1_brief'>
                         <div className='brief'>
                             <img src={IMG2} alt="" className="neighbour_title_image" />
                             <p className='task'>
@@ -75,30 +75,31 @@ function Project1() {
                         </div>
                         <img src={IMG1} alt="" className="Project1_brief_img" />
                     </div>
+                    <div className='hypothesis_tn'>
+                        <p style={{ paddingTop: "3rem", marginLeft: "4rem", marginRight: "5rem" }}>
+                            <b style={{ fontWeight: "bold", fontSize: ".9rem", color: "var(--color-box)", textDecorationLine: "underline", }}>Hypothesis: </b>
+                            <span style={{ fontWeight: "normal", color: "var(--color-box)", fontSize: ".9rem" }}>
+                                By implementing a fixed navigation bar at the bottom of the app, users will be able
+                                to easily access and explore the app's features, resulting in a more intuitive user experience.
+                                Unlike the hamburger menu, which can sometimes hide information and require users to go through
+                                additional steps to find what they're looking for, a fixed navigation bar provides immediate
+                                visibility and quick access to important functionalities such as emergency help or various ways
+                                to support the homeless.
+                            </span>
+                        </p>
 
-                    <p style={{ paddingTop: "3rem", marginLeft: "4rem", marginRight: "5rem" }}>
-                        <b style={{ fontWeight: "bold", fontSize: ".9rem", color: "var(--color-box)", textDecorationLine: "underline", }}>Hypothesis: </b>
-                        <span style={{ fontWeight: "normal", color: "var(--color-box)", fontSize: ".9rem" }}>
-                            By implementing a fixed navigation bar at the bottom of the app, users will be able
-                            to easily access and explore the app's features, resulting in a more intuitive user experience.
-                            Unlike the hamburger menu, which can sometimes hide information and require users to go through
-                            additional steps to find what they're looking for, a fixed navigation bar provides immediate
-                            visibility and quick access to important functionalities such as emergency help or various ways
-                            to support the homeless.
-                        </span>
-                    </p>
+                        <p style={{ fontWeight: "normal", color: "var(--color-box)", fontSize: ".9rem", marginLeft: "4rem", marginRight: "5rem" }}>
+                            Chunking information into smaller sections will improve usability of the app. Direct competitors like
+                            Homeless Link and Refugees at Home lack clear separation between different types of information overwhelming readers.
+                            By organising content into smaller, easily digestible sections, users will be able to navigate and
+                            understand the app's offerings more efficiently.
+                        </p>
 
-                    <p style={{ fontWeight: "normal", color: "var(--color-box)", fontSize: ".9rem", marginLeft: "4rem", marginRight: "5rem" }}>
-                        Chunking information into smaller sections will improve usability of the app. Direct competitors like
-                        Homeless Link and Refugees at Home lack clear separation between different types of information overwhelming readers.
-                        By organising content into smaller, easily digestible sections, users will be able to navigate and
-                        understand the app's offerings more efficiently.
-                    </p>
-
-                    <p style={{ fontWeight: "normal", color: "var(--color-box)", fontSize: ".9rem", marginLeft: "4rem", marginRight: "5rem" }}>
-                        User journeys will be enhanced, ensuring clear CTAs, and making the app more accessible and usable for a wide range
-                        of users, including those experiencing homelessness.
-                    </p>
+                        <p style={{ fontWeight: "normal", color: "var(--color-box)", fontSize: ".9rem", marginLeft: "4rem", marginRight: "5rem" }}>
+                            User journeys will be enhanced, ensuring clear CTAs, and making the app more accessible and usable for a wide range
+                            of users, including those experiencing homelessness.
+                        </p>
+                    </div>
                     <div id="research">
                         <h5 style={{ textDecorationLine: "underline", textAlign: "center", color: "var(--color-primary)", fontSize: "1.5rem", letterSpacing: ".2rem" }}>
                             Research
@@ -116,7 +117,7 @@ function Project1() {
                                     <img src={IMG5} alt="" className="competitoranalysis2_img" />
                                 </div>
                             </div>
-                            <div className='features' style={{ paddingTop: "3rem", marginLeft: "15rem", marginRight: "15rem", fontSize: ".8rem" }}>
+                            <div className='features'>
                                 <div className='cacontainer'>
                                     <h4 style={{ textDecorationLine: "underline", textAlign: "center", color: "var(--color-box)", fontSize: ".8rem" }}>
                                         Homeless Link Image -  Summary of factors leading to homelessness
@@ -130,7 +131,7 @@ function Project1() {
 
                                 <div className="containerfeature">
                                     My Competitor Analysis Reasearch showed me the essential features to be included in the app are as follows:
-                                    <ol style={{ paddingTop: "1rem", /* marginLeft:"9rem", marginRight:"9rem", */ fontSize: ".8rem" }}>
+                                    <ol style={{ paddingTop: "1rem", fontSize: ".8rem" }}>
                                         <li>
                                             A <b> clear</b> and <b>optional</b> <b style={{ fontWeight: "bold", fontSize: "0.8rem", color: "var(--color-primary)" }}> User Profile Section</b> for individuals who want to be involved or provide
                                             assistance. Users can personalise their experience within the app.
@@ -432,22 +433,22 @@ function Project1() {
                             <h5 style={{ marginTop: "4rem", textDecorationLine: "underline", textAlign: "center", color: "var(--color-primary)", fontSize: "1.2rem" }}>
                                 UI Phase
                             </h5>
-                            <div style={{ display: "grid", gridTemplateColumns: "40%60%", gap: "0rem" }}>
+                            <div className='ui3'>
                                 <img src={IMG35} alt="" className="Colourchecker" />
                                 <div>
                                     <p>
                                         Thy Neighbour follows not only the Web Content Accessibility Guidelines
                                         (WCAG) and user interface (UI) laws but also takes into account the principles
                                         of Hick's Law to create an inclusive and user-friendly experience. By considering
-                                        the Hick's Law, we have carefully optimized the decision-making process for users,
-                                        minimizing cognitive load and enhancing efficiency.
+                                        the Hick's Law, we have carefully optimised the decision-making process for users,
+                                        minimising cognitive load and enhancing efficiency.
                                     </p>
                                     <p>
                                         In terms of WCAG compliance, we have implemented features like alternative text
                                         for images, ensuring that visually impaired users can access descriptive information.
-                                        Additionally, we have prioritized a clear and consistent navigation structure,
+                                        Additionally, we have prioritised a clear and consistent navigation structure,
                                         reducing the number of choices presented at any given time. This aligns with Hick's
-                                        Law, as it helps users make decisions more swiftly by minimizing the cognitive effort
+                                        Law, as it helps users make decisions more swiftly by minimising the cognitive effort
                                         required.
                                     </p>
                                     <p>
@@ -460,7 +461,7 @@ function Project1() {
                                     </p>
                                 </div>
                             </div>
-                            <div style={{ display: "grid", gridTemplateColumns: "60%40%", gap: "0rem", alignItems: "center" }}>
+                            <div className='ui2'>
                                 <p style={{ marginTop: "2rem" }}>
                                     Throughout the design process, we have conducted extensive user testing and gathered
                                     feedback from diverse user groups. This approach ensures that our app meets the needs and

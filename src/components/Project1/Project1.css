@@ -17,19 +17,22 @@
     grid-template-columns: 60% 40%;
     position: relative;
     left: -12.5vw;
-    width: 1000vw;
     height: auto;
     background-color: #ffee0026;
     border: 2px solid;
     border-color: #c1a06800;
     color: var(--color-box);
+    margin: 0;
+    padding: 0;
+    width: 100vw
 }
 
 .Project1_brief_img {
-    width: 100%;
-    /* Make the image span the full width of the container */
-    margin-left: 0;
-    /* Reset the margin */
+
+    width: 60%;
+    height: auto;
+    margin-left: 6%;
+
 }
 
 
@@ -47,11 +50,7 @@
 }
 
 
-.Project1_brief_img {
-    width: 60%;
-    height: auto;
-    margin-left: 6%;
-}
+
 
 /* research section */
 .Project1_homelessLink h4 {
@@ -71,6 +70,10 @@
 .features {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-top: 3rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-size: 0.8rem
 }
 
 .caf_container {
@@ -487,6 +490,20 @@
     color: var(--color-box);
 }
 
+.ui3 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0rem;
+}
+
+
+.ui2 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 0rem;
+    align-items: center;
+}
+
 .Ideationphases {
     transition: transform 1s ease;
 }
@@ -532,48 +549,262 @@ video {
     display: flex;
 
 }
-
-
-@media (max-width: 768px) {
-
-    /* Adjust the layout for smaller screens */
-    .Project1_brief {
-        grid-template-columns: 100%;
-        /* Display the columns as a single column */
-        left: 0;
-        /* Reset the left positioning */
-        padding-left: 0;
-        margin-left: 0;
+@media screen and (max-width: 1024px){
+    .Project1.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
+    .brief{
+        margin-left: 0rem;
+    }
 
+    .Project1_brief {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        /* Center the container horizontally and remove any margin */
+        left: 0vw;
+    }
+
+    .Project1_brief_img {
+        width: 100%;
+        /* Make the image take full width */
+        max-width: 300px;
+        /* Set a maximum width for the image */
+        margin-top: 1rem;
+        /* Add some top margin for spacing */
+    }
+
+    .Research {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .features {
         display: flex;
         flex-direction: column;
-        /* Stack elements vertically */
         align-items: center;
-    }
-
-    .caf_container {
-        position: static;
-        /* Reset the positioning */
         width: 100%;
-        /* Set width to full width of the viewport */
-        left: 0;
-        /* Reset the left positioning */
+        /* Make the width full for smaller screens */
+        padding-top: 0rem;
         margin-left: 0;
-        /* Reset the left margin */
+        /* Adjust as needed */
         margin-right: 0;
-        /* Reset the right margin */
+        /* Adjust as needed */
     }
 
+    .caimages,
+    .caf_container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        /* Make the width full for smaller screens */
+    }
+
+    /* Make images fill the container width */
     .competitoranalysis1_img,
     .competitoranalysis2_img,
     .Project1_homelessLink_image {
         width: 100%;
-        /* Make images fill the container width */
+        max-width: 300px;
+        /* Set a maximum width for the images */
+        margin-top: 1rem;
+        /* Add some top margin for spacing */
     }
 
+    /* Reset the positioning and margins for the .caf_container */
+    .caf_container {
+        position: static;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .finding,
+    .Card_sorting,
+    .lowfidelitywireframe_container {
+        left: -7vw;
+    }
+
+    .uiphase_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+  
+    .uiphase_container>h5 {
+        margin-top: 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .uiphase_container>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uiphase_container img {
+        width: 80%;
+        height: auto;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+
+    .Ideationphases {
+        width: 80%;
+        height: auto;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+
+    .ui2 p{
+        text-align: center;
+        padding-right: 0%;
+    }
+    .ui3 p{
+        text-align: center;
+        padding-right: 0%;
+        margin-top: 1yrem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .Project1.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Project1_brief {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        /* Center the container horizontally and remove any margin */
+        left: 0vw;
+    }
+
+    .Project1_brief_img {
+        width: 100%;
+        /* Make the image take full width */
+        max-width: 300px;
+        /* Set a maximum width for the image */
+        margin-top: 1rem;
+        /* Add some top margin for spacing */
+    }
+
+    .Research {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* Make the width full for smaller screens */
+        padding-top: 0rem;
+        margin-left: 0;
+        /* Adjust as needed */
+        margin-right: 0;
+        /* Adjust as needed */
+    }
+
+    .caimages,
+    .caf_container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        /* Make the width full for smaller screens */
+    }
+
+    /* Make images fill the container width */
+    .competitoranalysis1_img,
+    .competitoranalysis2_img,
+    .Project1_homelessLink_image {
+        width: 100%;
+        max-width: 300px;
+        /* Set a maximum width for the images */
+        margin-top: 1rem;
+        /* Add some top margin for spacing */
+    }
+
+    /* Reset the positioning and margins for the .caf_container */
+    .caf_container {
+        position: static;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .finding,
+    .Card_sorting,
+    .lowfidelitywireframe_container {
+        left: -5vw;
+    }
+
+    .uiphase_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+  
+    .uiphase_container>h5 {
+        margin-top: 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .uiphase_container>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uiphase_container img {
+        width: 80%;
+        height: auto;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+
+    .Ideationphases {
+        width: 80%;
+        height: auto;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+
+    .ui2 p{
+        text-align: center;
+        padding-right: 0%;
+    }
+    .ui3 p{
+        text-align: center;
+        padding-right: 0%;
+        margin-top: 1yrem;
+    }
 
 }
