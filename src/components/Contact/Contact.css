@@ -21,6 +21,8 @@
     border: 1px solid transparent;
     transition: var(--transition);
     color: var(--color-primary);
+    word-break: break-all;
+    font-size: small;
 }
 
 .contact__option a {
@@ -38,6 +40,7 @@
 
 .contact__option:hover h4 {
     color: var(--color-primary-variant);
+    font-size: small;
 }
 
 .contact__option:hover .icon {
@@ -80,12 +83,25 @@ textarea {
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* Media Queries for medium devices*/
 @media screen and (max-width: 1024px) {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button {
+        width: calc(90% - 20px); /* Reduce width slightly for smaller screens */
+        justify-content: center;
+
+    }
+
+   
 }
 
 /* Media Queries for small devices*/
@@ -93,4 +109,5 @@ textarea {
     .container.contact__container {
         width: var(--container-width-sm);
     }
+
 }
