@@ -43,9 +43,43 @@
     grid-template-columns: 8% 92%;
 }
 
+
+.Task b {
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.Task span {
+    font-weight: normal;
+    display: block; /* Ensure the span takes full width and stacks */
+    padding-top: 0.5rem; /* Add some top padding */
+    color: var(--color-box);
+    padding-left: 0rem
+}
+
 .Aims {
     display: grid;
     grid-template-columns: 4% 96%;
+}
+
+.Aims b{
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+
+.Aims ul {
+    padding-left: 2rem; /* Adjust the left padding */
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--color-box);
+    padding-left: 8rem;
+    padding-top: 1rem;
+}
+
+.Aims ul li {
+    font-size: 14px; /* Decrease the font size */
+    margin-bottom: 1rem; /* Add some bottom margin between list items */
 }
 
 .Project2_brief h4,
@@ -198,7 +232,6 @@ li {
     width: 90%;
     height: auto;
     border-radius: .5rem;
-    margin-top: 1;
     margin-left: auto;
     transition: transform 1s ease;
 }
@@ -211,7 +244,6 @@ li {
     height: auto;
     width: 30rem;
     border-radius: 1rem;
-    padding-top: -5rem;
     transition: transform 1s ease;
 
 }
@@ -220,10 +252,6 @@ li {
     transform: scale(1.1);
 }
 
-/* .Red_route_analysis{
- background-color:  #1f7a8c28;
- width: 150%;
-} */
 
 .redroute_card {
     display: grid;
@@ -242,16 +270,6 @@ li {
 }
 
 
-/*.Red_route_analysis{
-    height: 100rem;
-    width: 63rem;
-    border-radius: 1rem;
-    background: var(--color-primary-variant);
-    margin: 0 auto;
-    color: var(--color-primary);
-    padding-left: 5rem;
-    padding-right: 5rem;
-}*/
 .participant_info_container h3 {
     padding-top: 1rem;
     padding-left: 1rem;
@@ -270,7 +288,6 @@ li {
 }
 
 .further_details {
-    padding-top: -5rem;
     margin-left: -3rem;
     text-align: left;
 }
@@ -345,8 +362,6 @@ li {
     /* Position the previous button on the left */
 }
 
-
-
 .surveyresponse1 {
     width: 70%;
     height: auto;
@@ -391,6 +406,15 @@ li {
 .mainsurvey {
     padding-left: 10rem;
     font-size: 0.8rem;
+   
+}
+
+.mainsurvey h3{
+    text-align: center;
+    text-decoration: underline;
+    margin-left: -10rem;
+    color: var(--color-primary);
+    font-size: 1.2rem;
 }
 
 .grid-container {
@@ -456,6 +480,30 @@ li {
 
 .swiper-container h3 {
     text-align: center;
+    padding-top: 2rem;
+    padding-left: 10rem
+}
+
+.swiper-slide {
+    width: 600px;
+    height: 350px;
+    align-items: center;
+}
+
+.list h3{
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 0rem;
+    color:var(--color-primary);
+    
+}
+
+.list {
+    padding-left: 20rem
+}
+
+.list li{
+    font-size: 12.8px;
 }
 
 .ideation_phase p {
@@ -502,8 +550,6 @@ li {
     gap: .5rem;
     margin-bottom: 1rem;
 }
-
-
 
 .mindmapping__card {
     background: #056e944b;
@@ -621,8 +667,6 @@ li {
 
 .border {
     position: relative;
-    margin-top: rem;
-    padding-top: rem;
     left: -12.5vw;
     width: 100vw;
     height: auto;
@@ -664,7 +708,13 @@ li {
     padding-bottom: 6rem;
 }
 
-@media (max-width: 768px) {
+/* General Styles */
+.container-project2 {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+
+@media (max-width: 600px) {
     .asos_logo {
         width: 80%;
         height: 10rem;
@@ -674,21 +724,29 @@ li {
     }
 
     .Project2_brief {
-        height: 28rem;
+        height: auto; /* Set height to auto to allow content to determine height */
         width: auto;
         display: grid;
-        grid-template-rows: 70% 30%;
-        margin-bottom: 20rem;
+        grid-template-rows: auto; /* Set rows to auto to allow content to stack vertically */
+        grid-template-columns: 100%; /* Full width for the image */
+        margin-bottom: 2rem; /* Adjust margin as needed */
+       
     }
+
+    .Project2_brief img {
+        width: 60%; /* Make the image take full width */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
+
+   
 
     .Project2_briefText {
         display: flex;
         flex-direction: column;
         /* Stack elements vertically */
         align-items: center;
+        line-height: 1;
     }
-
-
 
     .Project2_brief p {
         display: flex;
@@ -697,38 +755,69 @@ li {
         align-items: center;
     }
 
-
-
     .Task {
-        height: 150%;
-        margin: 8% auto;
-
+        padding-left: 0rem; /* Adjust the left padding */
     }
 
-    .Aims {
-        flex-direction: column;
-        /* Stack items vertically on smaller screens */
+   
+    .Task span {
+        font-size: 14px; /* Decrease the font size */
+        display: block; /* Ensure the span takes full width and stacks */
+        padding-top: 1.5rem; /* Add some top padding */
+        padding-left: 0;
+        padding-bottom: 1.5rem;
     }
-
-    .Aims h4,
+   
     .Aims ul {
+        padding-left: 0rem; /* Adjust the left padding */
+    }
+
+    .Aims ul li {
+        font-size: 14px; /* Decrease the font size */
+        margin-bottom: 1rem; /* Add some bottom margin between list items */
+        padding-left: 0rem;
+    }
+
+    .further_details {
+        margin-left: 0rem;
+        text-align: left;
+    }
+
+    .review1_title {
+        margin-top: 1rem;
+    }
+
+    .theproblem{
         width: 100%;
-        /* Ensure full width for both heading and list */
-        padding-left: 1rem;
-        /* Add some padding for better readability */
+        margin-left: 1rem;
+    }
+
+    .theproblem span,
+    .theproblem h3 {
+        margin-left: 1rem; /* Remove the left margin */
+        text-align: center; /* Center the text */
+    }
+
+    .theproblem_research_container{
+        display: flex;
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center-align items horizontally */
+        justify-content: center;
+        /* Center-align items vertically */
+        width: 100%;
+        /* Example width for all sections */
+        flex-grow: 2;
+        margin-left: -1rem;
+
     }
 
     .problem,
-    .theproblem_research_container,
     .Research,
-    .Red_route_analysis,
     .redroute_card,
-    .fdnra,
     .InterviewsandSurveys2,
-    .InterviewsandSurveys,
     .grid-container,
-    .ideation_phase,
-    .mindmap .mindmap1,
     .mindmap2 {
         display: flex;
         flex-direction: column;
@@ -738,21 +827,111 @@ li {
         justify-content: center;
         /* Center-align items vertically */
         width: 100%;
-        /* Make sure the width spans the full width of the container */
-        width: 90%;
         /* Example width for all sections */
-        flex-grow: 2
+        flex-grow: 2;
+        margin-left: -1rem;
+        padding-right: 10%
+    }
+
+    .mindmap .mindmap1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mindmap {
+        width: 115%;
+        margin-left: 1rem;
+    }
+    .mindmapping__card {
+        width: 95%; /* Ensure each card takes full width */
+        margin-bottom: 1rem; /* Add some bottom margin for spacing */
+    }
+
+    .mindmapping__card h4 {
+        text-align: left; /* Align the headings to the left */
+    }
+
+    .mindmap1,
+    .mindmap2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align items horizontally */
+        justify-content: center; /* Center-align items vertically */
+        width: 100%; /* Ensure full width */
+        margin-left: 0; /* Reset left margin */
+        margin-right: 0; /* Reset right margin */
+    }
+
+
+    .method_text {
+        margin-top: 0rem
+    }
+
+    .Research{
+        margin-left: -.5rem;
+    }
+
+    .ideation_phase{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fdnra{
+        gap: 0rem;
+        padding: 0% 0% 0% 0%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center-align items horizontally */
+        justify-content: center;
+    }
+
+    .participant_info {
+        width: 100%;
+        height: auto;
+        margin-left: 20%;
+    }
+
+    .redroute {
+        height: auto;
+        width: 17rem;
+        margin-left: 20%;
+    }
+
+    .participant_info_container p {
+        text-align: center;
+        padding: 0% 0% 0% 0%;
+    }
+
+    .InterviewsandSurveys{
+        width: 115%;
+        margin-left: 2rem;
     }
 
     .mainsurvey {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 95%;
         padding-left: 0;
-        /* Remove padding-left for smaller screens */
         margin: 0 auto;
     }
-
+    
+    .mainsurvey h3{
+        text-align: center;
+        text-decoration: underline;
+        margin-left: 0rem;
+        color: var(--color-primary);
+        font-size: 1.2rem;
+    }
+    
 
     .list-container {
         padding: 0;
@@ -765,13 +944,7 @@ li {
         /* Center-align the survey content */
     }
 
-    .grid-container ol {
-        padding-left: 0;
-        /* Remove default padding for the ordered list */
-        list-style-type: none;
-        /* Remove default numbering for list items */
-    }
-
+  
     .grid-container li {
         margin-bottom: 1rem;
         /* Add space between list items */
@@ -799,7 +972,6 @@ li {
         transition: background-color 0.3s ease;
     }
 
-
     .swiper-container .swiper-button-next {
         right: 10px;
         /* Adjust the positioning of the next button */
@@ -815,10 +987,10 @@ li {
     .surveyresponse3,
     .surveyresponse4,
     .surveyresponse5 {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 125px;
         max-width: 100%;
-        margin: 2.5% auto;
+        margin-left: 15%;
         border-radius: .5rem;
     }
 
@@ -830,34 +1002,15 @@ li {
 
     .swiper-container h3 {
         text-align: center;
+        padding-top: 0rem; 
+        padding-left: 0rem;
     }
 
-    .swiper-container img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .swiper-slide img {
-        max-width: 100%;
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-    }
-
+  
     .swiper-slide {
-        display: flex;
-        justify-content: center;
+        height: 170px;
     }
 
-    .theproblem_research_container h3,
-    .theproblem_research_container p,
-    .Research h3,
-    .Research p,
-    .Competitor_analysiscontainer h3,
-    .Competitor_analysiscontainer p {
-        margin: 10px 0;
-        /* Add some margin for spacing between stacked text */
-    }
 
     .Competitor_analysiscontainer1 {
         display: flex;
@@ -867,7 +1020,7 @@ li {
         /* Center-align items horizontally */
         max-width: 600px;
         /* Example maximum width for the container */
-        margin-top: 20px;
+        margin-top: 0px;
         /* Adjust margin as needed */
     }
 
@@ -875,14 +1028,29 @@ li {
     .problem h4,
     .Research h3,
     .Competitor_analysiscontainer h3 {
-        margin-top: 20px;
+        margin-top: 10px;
+        padding-top: 0rem;
+    }
+
+    .Competitor_analysiscontainer{
+        padding-left: 0;
+        width: 340px;
+        padding-right: 0;
+        margin-left: -1.5rem;
+    }
+
+    .Competitor_analysiscontainer h3 {
+        padding-top: 2rem;
     }
 
     .Competitor_analysis1,
-    .Competitor_analysis2 {
-        max-width: 90%;
+    .Competitor_analysis2,
+    .Competitor_analysis3 {
+        max-width: 100%;
         /* Adjust maximum width */
-        margin-top: 20px;
+        margin-top: 0px;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
     .reviewc2 {
@@ -894,8 +1062,8 @@ li {
 
     .list {
         order: 2;
-        /* Change the order of the text to be displayed below the image */
-        padding: 0 !important;
+        padding-top: 0rem;
+        padding-left: 0rem
     }
 
     .review3 {
@@ -915,15 +1083,15 @@ li {
     }
 
     .crazy8Container_p {
+        text-align: center;
         order: 2;
         /* Change the order of the paragraph div to be displayed below the image */
     }
 
     .wireframes {
         padding: 2rem 1rem;
-        /* Adjust padding for smaller screens */
-        max-width: 90%;
-        /* Reduce maximum width */
+        width: 115%;
+        margin-left: 1rem;
     }
 
     .homepagelfw,
@@ -965,6 +1133,7 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     .uiphase1,
@@ -972,11 +1141,28 @@ li {
         width: 100%;
     }
 
-    .uiphase2 p {
-        margin-left: 0;
+    .accessibility-content p{
+        margin-left: 2rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .uiphase2 p{
+        margin-left: 3rem;
         /* Reset the left margin */
         margin-right: 0;
         /* Reset the right margin */
+        width: 80%;
+    }
+
+    .border {
+        left: 3vw;
+    }
+
+    .conclusion{
+        margin-right: -2rem;
+        margin-left: 0rem;
+        width: 115%;
     }
 
 }

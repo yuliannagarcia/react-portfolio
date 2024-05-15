@@ -42,7 +42,7 @@ import 'swiper/css/scrollbar';
 function Project2() {
         return (
                 <section id="Project2" className='Project2'>
-                        <div className="container">
+                        <div className="container-project2">
                                 <img src={IMG1} alt="" className="asos_logo" />
                                 <div className='Project2_container'>
                                         <h2>
@@ -51,20 +51,18 @@ function Project2() {
                                         <div className="Project2_brief">
                                                 <div className="Project2_briefText">
                                                         <div className='Task'>
-                                                                <b style={{ fontWeight: "bold", fontSize: "20px", color: "var(--color-primary)" }}>
+                                                                <b>
                                                                         Task:
                                                                 </b>
-                                                                <span style={{ fontWeight: "normal", fontSize: "px", color: "var(--color-box)", paddingLeft: "5rem" }}>
+                                                                <span>
                                                                         Identify 5 problem areas within the website journey. As a UX/UI designer use design thinking to solve these problems and demonstrate your ability in responsive design.
                                                                 </span>
                                                         </div >
                                                         <div className='Aims'>
-                                                                <h4>
-                                                                        <b style={{ fontWeight: "bold", fontSize: "20px", color: "var(--color-primary)" }}>
-                                                                                Aims:
-                                                                        </b>
-                                                                </h4>
-                                                                <ul style={{ fontWeight: "normal", fontSize: "15px", color: "var(--color-box)", paddingLeft: "8rem", paddingTop: "1rem" }}>
+                                                                <b>
+                                                                        Aims:
+                                                                </b>
+                                                                <ul>
                                                                         <li>
                                                                                 To create a functional ECommerce
                                                                                 platform that complies with UX methodologies
@@ -212,37 +210,36 @@ function Project2() {
                                                                 </p>
                                                         </div>
                                                 </div>
-                                                <img src={IMG3} alt="" className="reviewsimg" />
-                                                <h4>
-                                                        ASOS direct competitors are Pretty Little Thing, Boohoo and SHEIN they are all Fashion
-                                                        eCommerce that have the same endpoint which is to sell online clothes. My research showed
-                                                        although competitors have similar features how the features are shown and presented to
-                                                        customers matters and makes the features effective.
-                                                </h4>
-                                                <h4>
-                                                        Amazon is an Indirect competitor as its an eCommerce that has many similar features and user
-                                                        journeys as ASOS but just sell different products.
-                                                </h4>
-                                                <img src={IMG4} alt="" className="cat_image1" />
+                                                <div className='Competitor_analysis3'>
+                                                        <img src={IMG3} alt="" className="reviewsimg" />
+                                                        <h4>
+                                                                ASOS direct competitors are Pretty Little Thing, Boohoo and SHEIN they are all Fashion
+                                                                eCommerce that have the same endpoint which is to sell online clothes. My research showed
+                                                                although competitors have similar features how the features are shown and presented to
+                                                                customers matters and makes the features effective.
+                                                        </h4>
+                                                        <h4>
+                                                                Amazon is an Indirect competitor as its an eCommerce that has many similar features and user
+                                                                journeys as ASOS but just sell different products.
+                                                        </h4>
+                                                        <img src={IMG4} alt="" className="cat_image1" />
 
-                                                <h3>
-                                                        Screenshots of the competitors UX capabilities compared to ASOS:
-                                                </h3>
-                                                <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className='caimages'>
-                                                        <SwiperSlide><img src={IMG5} alt="" className="ca1_image" /></SwiperSlide>
-                                                        <SwiperSlide><img src={IMG6} alt="" className="ca2_image" /></SwiperSlide>
-                                                        <SwiperSlide><img src={IMG7} alt="" className="ca3_image" /></SwiperSlide>
-                                                        <SwiperSlide><img src={IMG8} alt="" className="ca4_image" /></SwiperSlide>
-                                                </Swiper>
+                                                        <h3>
+                                                                Screenshots of the competitors UX capabilities compared to ASOS:
+                                                        </h3>
+                                                        <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className='caimages'>
+                                                                <SwiperSlide><img src={IMG5} alt="" className="ca1_image" /></SwiperSlide>
+                                                                <SwiperSlide><img src={IMG6} alt="" className="ca2_image" /></SwiperSlide>
+                                                                <SwiperSlide><img src={IMG7} alt="" className="ca3_image" /></SwiperSlide>
+                                                                <SwiperSlide><img src={IMG8} alt="" className="ca4_image" /></SwiperSlide>
+                                                        </Swiper>
+                                                </div>
                                         </div>
                                         <div className='Red_route_analysis'>
-                                                <h3 style={{/*fontFamily:"'Big Caslon', sans-serif",*/ fontWeight: "normal", fontSize: "1.3rem", color: "var(--color-box)", paddingTop: "2rem", paddingBottom: "1rem", textAlign: "center", textDecoration: "underline" }}>
+                                                <h3 style={{ fontWeight: "normal", fontSize: "1.3rem", color: "var(--color-box)", paddingTop: "2rem", paddingBottom: "1rem", textAlign: "center", textDecoration: "underline" }}>
                                                         Red Route Analysis:
                                                 </h3>
                                                 <div className='participant_info_container'>
-                                                        {/*  <h3 style={{fontWeight: "bold", fontSize: "1rem", color:"var(--color-primary)",paddingTop:"4rem"}}>
-                                                        Red Route Analysis:
-                                                </h3> */}
                                                         <p style={{ fontWeight: "normal", fontSize: "0.8rem", color: "var(--color-box)" }}>
                                                                 A red route analysis helped me visually see what features users find most to least important in their
                                                                 user journey when purchasing a product to make their online shopping experience swift. Again it backs
@@ -322,7 +319,7 @@ function Project2() {
                                 <div>
                                         <div className='InterviewsandSurveys'>
                                                 <div className='mainsurvey'>
-                                                        <h3 style={{ textDecorationLine: "underline", textAlign: "center", marginLeft: "-10rem", color: "var(--color-primary)", fontSize: "1.2rem" }}>
+                                                        <h3>
                                                                 Survey & Responses
                                                         </h3>
                                                         <div className="grid-container">
@@ -381,7 +378,7 @@ function Project2() {
                                                                         <h3 style={{ textDecorationLine: "underline" }}>
                                                                                 Some responses from my participants on google forms:
                                                                         </h3>
-                                                                        <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} style={{ width: "600px", height: "350px", itemAlign: "center" }}>
+                                                                        <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]}>
                                                                                 <SwiperSlide><img src={IMG40} alt="" className="surveyresponse1" /></SwiperSlide>
                                                                                 <SwiperSlide><img src={IMG41} alt="" className="surveyresponse2" /></SwiperSlide>
                                                                                 <SwiperSlide><img src={IMG42} alt="" className="surveyresponse3" /></SwiperSlide>
@@ -404,10 +401,10 @@ function Project2() {
                                                         and minimizing the need for immediate customer service support.
                                                 </p>
                                                 <div className='reviewc2'>
-                                                        <div className='list' style={{ paddingTop: "2rem", paddingLeft: "20rem" }}>
-                                                                <b style={{ fontWeight: "extra bold", fontSize: "17px", textDecorationLine: "underline" }}>
+                                                        <div className='list'>
+                                                                <h3 style={{ textDecorationLine: "underline" }}>
                                                                         Reviews can:
-                                                                </b>
+                                                                </h3>
                                                                 <ul>
                                                                         <li>
                                                                                 Help answer questions customers may have
@@ -431,7 +428,7 @@ function Project2() {
                                         </div>
                                 </div>
                                 <div className='ideation_phase'>
-                                        <h3 style={{/*fontFamily:"'Big Caslon', sans-serif",*/ fontWeight: "normal", fontSize: "1.3rem", color: "var(--color-box)", paddingTop: "2rem", paddingBottom: "1rem", textAlign: "center", textDecoration: "underline" }}>
+                                        <h3 style={{fontWeight: "normal", fontSize: "1.3rem", color: "var(--color-box)", paddingTop: "2rem", paddingBottom: "1rem", textAlign: "center", textDecoration: "underline" }}>
                                                 Crazy 8's
                                         </h3>
                                         <div className="crazy8Container">
@@ -468,7 +465,7 @@ function Project2() {
                                         </div>
                                         <div className='mindmap'>
                                                 <div className='method_text'>
-                                                        <h3 style={{/*fontFamily:"'Big Caslon', sans-serif",*/ fontWeight: "normal", fontSize: "1.3rem", color: "var(--color-box)", paddingTop: "2rem", paddingBottom: "1rem", textAlign: "center", textDecoration: "underline" }}>
+                                                        <h3 style={{ fontWeight: "normal", fontSize: "1.3rem", color: "var(--color-box)", paddingTop: "2rem", paddingBottom: "1rem", textAlign: "center", textDecoration: "underline" }}>
                                                                 Mind-mapping
                                                         </h3>
                                                         <p style={{ fontWeight: "normal", fontSize: "1rem", textAlign: "left" }}>
@@ -593,11 +590,7 @@ function Project2() {
                                                 <h4 style={{ textDecorationLine: "underline", textAlign: "center", color: "var(--color-primary)", fontSize: "1.2rem", marginTop: "2rem" }}>
                                                         Low Fidelity Wireframes
                                                 </h4>
-                                                {/* <Swiper className="lowfidelitywireframes"
-                                                        modules={[Pagination]} spaceBetween={40}
-                                                        slidesPerView={1}
-                                                        pagination={{ clickable: true }}
-                                                                                > */}
+
 
                                                 <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className="lowFidelitywireframes">
 
@@ -675,13 +668,15 @@ function Project2() {
                                                 </p>
                                         </div>
                                         <div className='accessibility'>
-                                                <div style={{ textAlign: 'center' }}>
-                                                        <img src={IMG24} alt="" className="colourchecker" />
-                                                        <p>
-                                                                Through my high fidelity wireframe design I tried take accessibility into account while still sticking
-                                                                to the Black, grey and white ASOS colour palette I used a Colour contrast plug-in called A11Y to meet
-                                                                an AAA end result throughout the pages in my design.
-                                                        </p>
+                                                <div>
+                                                        <div className='accessibility-content'>
+                                                                <img src={IMG24} alt="" className="colourchecker" />
+                                                                <p>
+                                                                        Through my high fidelity wireframe design I tried take accessibility into account while still sticking
+                                                                        to the Black, grey and white ASOS colour palette I used a Colour contrast plug-in called A11Y to meet
+                                                                        an AAA end result throughout the pages in my design.
+                                                                </p>
+                                                        </div>
                                                         <div className="border">
                                                                 <div className="uiphases">
                                                                         <div className='uiphase1'>
@@ -719,7 +714,7 @@ function Project2() {
                                         </div>
 
                                         <div className='conclusion'>
-                                                <h3 style={{ textDecorationLine: "underline", textAlign: "center", color: "var(--color-box)", fontSize: "1.2rem", marginTop: "5rem" }}>
+                                                <h3 style={{ textDecorationLine: "underline", textAlign: "center", color: "var(--color-box)", fontSize: "1.2rem", marginTop: "3rem" }}>
                                                         Conclusion
                                                 </h3>
                                                 <p>
