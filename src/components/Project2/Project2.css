@@ -1490,6 +1490,11 @@ li {
         padding-top: 0rem;
     }
 
+    .Competitor_analysis1 ul,
+    .Competitor_analysis2 p{
+        width: 90%;
+    }
+
     .Competitor_analysiscontainer{
         padding-left: 0;
         width: 340px;
