@@ -217,7 +217,7 @@ function Project1() {
                                     Volunteering was also highlighted as a crucial aspect by the participants. One individual
                                     expressed that contributing time and effort to help others is a meaningful way to make a
                                     difference, particularly for those who may not be in a position to offer financial support.
-                                    Another participant emphasized the importance of certain pages over others, suggesting that
+                                    Another participant emphasised the importance of certain pages over others, suggesting that
                                     while all pages are significant, those directly aimed at reducing the impact of homelessness
                                     should take priority. As a result, I decided to include an access to help page and a
                                     volunteering page as key features alongside the homepage.
@@ -275,7 +275,7 @@ function Project1() {
                                             evenings), and requirements (e.g., DBS checks, food and hygiene certificates).
                                         </li>
                                         <li>
-                                            Contact information for the centers or organizations being supported, detailing
+                                            Contact information for the centers or organisations being supported, detailing
                                             the roles volunteers would have, the specific populations they would be helping,
                                             and how their participation would make a difference.
                                         </li>

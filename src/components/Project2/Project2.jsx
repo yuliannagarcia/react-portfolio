@@ -428,7 +428,7 @@ function Project2() {
                                         </div>
                                 </div>
                                 <div className='ideation_phase'>
-                                        <h3 style={{fontWeight: "normal", fontSize: "1.3rem", color: "var(--color-box)", paddingTop: "2rem", paddingBottom: "1rem", textAlign: "center", textDecoration: "underline" }}>
+                                        <h3 style={{ fontWeight: "normal", fontSize: "1.3rem", color: "var(--color-box)", paddingTop: "2rem", paddingBottom: "1rem", textAlign: "center", textDecoration: "underline" }}>
                                                 Crazy 8's
                                         </h3>
                                         <div className="crazy8Container">
