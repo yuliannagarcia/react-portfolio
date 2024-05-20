@@ -107,7 +107,7 @@
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1920px) {
     .about__card{
         height: 40rem;
         font-size: 2rem;

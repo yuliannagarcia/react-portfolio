@@ -75,7 +75,14 @@
         gap: 0;
     }
 
+    .pro3{
+        width: auto;
+        height: 250px;
+    }
+
 }
+
+
 
 /* Media Queries for small devices*/
 @media screen and (max-width: 600px) {
@@ -89,15 +96,21 @@
         gap: 1rem;
     }
 
+    .pro3{
+        width: 250px;
+        height: auto;
+    }
+   
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1920px) {
     .Portfolio h3 {
         font-size: 3rem;
     }
 
     .pro3{
-        width: 45%;
+        width: auto;
+        height: 250px;
     }
 }

@@ -76,7 +76,7 @@ h2 {
 
 
 /* Media Queries for medium devices*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1920px) {
     .header__container h4,
     h2 {
         margin-top: 1%;

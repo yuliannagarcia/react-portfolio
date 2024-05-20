@@ -549,6 +549,14 @@ video {
     display: flex;
 
 }
+
+
+/* @media screen and (min-width: 1920px) {
+  .Project1{
+    font-size: 150%;
+  }
+} */
+
 @media screen and (max-width: 1024px){
     .Project1.container {
         display: flex;
