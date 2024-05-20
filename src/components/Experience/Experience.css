@@ -105,3 +105,31 @@
     
 
 }
+
+
+@media screen and (min-width: 1024px) {
+    .about__card{
+        height: 40rem;
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    .about__card h5{
+        font-size: 1.2rem;
+    }
+
+    .About h3{
+        font-size: 3rem;
+    }
+
+    .Experience h3{
+        font-size: 3rem;
+
+    }
+
+    .experience__details h4{
+        font-size: 150%;
+        padding-top: 1rem;
+    }
+
+}

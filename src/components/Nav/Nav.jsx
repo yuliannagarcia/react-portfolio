@@ -11,21 +11,17 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState('#Header');
   const location = useLocation();
 
-  const handleNavClick = (sectionId) => {
+  const handleNavClick = (sectionId, event) => {
+    //event.preventDefault(); // Prevent default behavior of anchor tag
     setActiveNav(sectionId);
     let element = document.querySelector(sectionId);
 
-    if (window.location.pathname === '/' && element) {
+    if (element) {
       window.scrollTo({
         top: element.offsetTop,
         behavior: 'smooth'
       });
     } else {
-      window.history.pushState({}, '', '/');
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
       setTimeout(() => {
         element = document.querySelector(sectionId);
         window.scrollTo({
@@ -34,6 +30,13 @@ const Nav = () => {
         });
       }, 100);
     }
+    setTimeout(() => {
+      element = document.querySelector(sectionId);
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+      });
+    }, 100);
   };
 
   useEffect(() => {
@@ -45,10 +48,12 @@ const Nav = () => {
       });
     };
 
+    const threshold = window.innerWidth <= 600 ? 0.4 : 0.7;
+
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.6,
+      rootMargin: '8%',
+      threshold: threshold,
     });
 
     const sections = document.querySelectorAll('section[id]');
@@ -67,11 +72,11 @@ const Nav = () => {
 
   return (
     <nav>
-      <Link to="/" onClick={() => handleNavClick('#Header')} className={activeNav === '#Header' ? 'active' : ''}><AiOutlineHome /></Link>
-      <Link to="/" onClick={() => handleNavClick('#About')} className={activeNav === '#About' ? 'active' : ''}><AiOutlineUser /></Link>
-      <Link to="/" onClick={() => handleNavClick('#Experience')} className={activeNav === '#Experience' ? 'active' : ''}><GiBrain /></Link>
-      <Link to="/" onClick={() => handleNavClick('#Portfolio')} className={activeNav === '#Portfolio' ? 'active' : ''}><AiOutlineFolderOpen /></Link>
-      <Link to="/" onClick={() => handleNavClick('#Contact')} className={activeNav === '#Contact' ? 'active' : ''}><MdOutlineMailOutline /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Header', event)} className={activeNav === '#Header' ? 'active' : ''}><AiOutlineHome /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#About', event)} className={activeNav === '#About' ? 'active' : ''}><AiOutlineUser /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Experience', event)} className={activeNav === '#Experience' ? 'active' : ''}><GiBrain /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Portfolio', event)} className={activeNav === '#Portfolio' ? 'active' : ''}><AiOutlineFolderOpen /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Contact', event)} className={activeNav === '#Contact' ? 'active' : ''}><MdOutlineMailOutline /></Link>
     </nav>
   );
 };

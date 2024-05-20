@@ -91,3 +91,13 @@
 
 
 }
+
+@media screen and (min-width: 1024px) {
+    .Portfolio h3 {
+        font-size: 3rem;
+    }
+
+    .pro3{
+        width: 45%;
+    }
+}

@@ -1,17 +1,16 @@
-#Header {
-    margin-top: 0;
-}
-
 .header__container {
     margin: 0 auto;
     height: fit-content;
     margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__container h4,
 h2 {
     margin-top: 1%;
     margin-bottom: 0%;
+    top: 0;
     text-align: center;
     font-family: 'Avenir Next', sans-serif;
     color: chocolate;
@@ -30,7 +29,6 @@ h2 {
 }
 
 
-
 /*  CTA  */
 .cta {
     display: flex;
@@ -43,10 +41,8 @@ h2 {
     text-decoration: none;
 }
 
-
 /* image */
 .me__background {
-    height: 34%;
     width: 34%;
     border-radius: 2rem;
     background: #022B3A;
@@ -54,6 +50,7 @@ h2 {
     place-items: center;
     margin: 0 auto;
     margin-top: 4.5%;
+    margin-bottom: 1rem;
 }
 
 .Yulianna {
@@ -78,32 +75,57 @@ h2 {
 }
 
 
-
-
-
 /* Media Queries for medium devices*/
-@media screen and (max-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .header__container h4,
+    h2 {
+        margin-top: 1%;
+        margin-bottom: 0%;
+        top: 0;
+        text-align: center;
+        font-family: 'Avenir Next', sans-serif;
+        color: chocolate;
+        font-size: 4rem;
+    }
+    
+    
+    .cta a {
+        height: 3.5rem;
+        width: 16rem;
+        text-align: center;
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+    }
+    
+    /* image */
+    .me__background {
+        width: 27%;
+    }
+    
+    .Yulianna {
+        width: 22%;
+    }
+     
+}
 
 /* Media Queries for small devices*/
 @media screen and (max-width: 600px) {
 
     /* image */
     .me__background {
-        height: 34%;
-        width: 50%;
+        width: 70%;
         border-radius: 2rem;
         background: #022B3A;
         display: grid;
         place-items: center;
         margin: 0 auto;
         margin-top: 20%;
-        margin-bottom: -20%;
     }
 
     .Yulianna {
-        width: 28%;
-        height: auto;
-        margin: 5% auto 5%;
+        width: 50%;
+        margin: 2rem auto;
     }
 
 
@@ -120,5 +142,23 @@ h2 {
         transform: rotate(0deg);
     }
 
+    .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .cta a {
+        text-decoration: none;
+        margin: 1rem 0;
+    }
+
+    #Header {
+        margin-top: 4rem;
+    }
+
+    .header__container h4 {
+        margin: 4rem auto;
+    }
 }

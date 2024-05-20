@@ -43,7 +43,7 @@ const Portfolio = () => {
         <div className="portfolio_item">
           <Link to="/Project3" onClick={scrollToTop}>
             <div className="portfolio_item_image_container">
-              <img className="portfolio_item-image portfolio_item_horizontal-image" src={IMG3} alt="" />
+              <img className="portfolio_item-image portfolio_item_horizontal-image pro3" src={IMG3} alt="" />
             </div>
           </Link>
           <article className="">
