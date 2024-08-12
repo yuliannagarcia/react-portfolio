@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../../Assets/CV-Yulianna Garcia.docx';
+import CV from '../../Assets/CV-Yulianna Garcia-UX:UI.docx';
 import './Header.css';
 
 const CTA = () => {
