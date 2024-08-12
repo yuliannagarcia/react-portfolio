@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f7864627.css",
-    "main.js": "/react-portfolio/static/js/main.454709e3.js",
+    "main.js": "/react-portfolio/static/js/main.d66d45cf.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/registerPage.mp4": "/react-portfolio/static/media/registerPage.7d283fee7b98476cb0a1.mp4",
     "static/media/childDashboard.mp4": "/react-portfolio/static/media/childDashboard.9b3e864059c442c7790f.mp4",
@@ -59,7 +59,7 @@
     "static/media/monster-one-third-left.png": "/react-portfolio/static/media/monster-one-third-left.c3df2c24497c46ea67f8.png",
     "static/media/cardsortinghnvp.png": "/react-portfolio/static/media/cardsortinghnvp.cec642cfd813cf86dbde.png",
     "static/media/RA.png": "/react-portfolio/static/media/RA.a30a1314c7f2332d1310.png",
-    "static/media/CV-Yulianna Garcia.docx": "/react-portfolio/static/media/CV-Yulianna Garcia.e9e57b20866f6578760f.docx",
+    "static/media/CV-Yulianna Garcia-UX:UI.docx": "/react-portfolio/static/media/CV-Yulianna Garcia-UX:UI.05d0ca24be2fbb0a78d1.docx",
     "static/media/monster-top-right.png": "/react-portfolio/static/media/monster-top-right.234be3f68953f76e0f50.png",
     "static/media/plfw.png": "/react-portfolio/static/media/plfw.b5131d233d2602be143c.png",
     "static/media/cardsortinghp.png": "/react-portfolio/static/media/cardsortinghp.349ff793ed00f9111cd4.png",
@@ -94,11 +94,11 @@
     "static/media/thyneighbour.png": "/react-portfolio/static/media/thyneighbour.8c1749cd7187d5cc865e.png",
     "index.html": "/react-portfolio/index.html",
     "main.f7864627.css.map": "/react-portfolio/static/css/main.f7864627.css.map",
-    "main.454709e3.js.map": "/react-portfolio/static/js/main.454709e3.js.map",
+    "main.d66d45cf.js.map": "/react-portfolio/static/js/main.d66d45cf.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7864627.css",
-    "static/js/main.454709e3.js"
+    "static/js/main.d66d45cf.js"
   ]
 }
