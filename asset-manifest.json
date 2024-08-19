@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f7864627.css",
-    "main.js": "/react-portfolio/static/js/main.d66d45cf.js",
+    "main.js": "/react-portfolio/static/js/main.185fe9b4.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/registerPage.mp4": "/react-portfolio/static/media/registerPage.7d283fee7b98476cb0a1.mp4",
     "static/media/childDashboard.mp4": "/react-portfolio/static/media/childDashboard.9b3e864059c442c7790f.mp4",
@@ -59,10 +59,10 @@
     "static/media/monster-one-third-left.png": "/react-portfolio/static/media/monster-one-third-left.c3df2c24497c46ea67f8.png",
     "static/media/cardsortinghnvp.png": "/react-portfolio/static/media/cardsortinghnvp.cec642cfd813cf86dbde.png",
     "static/media/RA.png": "/react-portfolio/static/media/RA.a30a1314c7f2332d1310.png",
-    "static/media/CV-Yulianna Garcia-UX:UI.docx": "/react-portfolio/static/media/CV-Yulianna Garcia-UX:UI.05d0ca24be2fbb0a78d1.docx",
     "static/media/monster-top-right.png": "/react-portfolio/static/media/monster-top-right.234be3f68953f76e0f50.png",
     "static/media/plfw.png": "/react-portfolio/static/media/plfw.b5131d233d2602be143c.png",
     "static/media/cardsortinghp.png": "/react-portfolio/static/media/cardsortinghp.349ff793ed00f9111cd4.png",
+    "static/media/UX:UI CV Yulianna Garcia.docx": "/react-portfolio/static/media/UX:UI CV Yulianna Garcia.802083609fa3cb27b8b2.docx",
     "static/media/participantinfo.png": "/react-portfolio/static/media/participantinfo.ca1d4fafab337562ae65.png",
     "static/media/monster-two-thirds-left.png": "/react-portfolio/static/media/monster-two-thirds-left.ab074e950b796b271bf7.png",
     "static/media/slfw.png": "/react-portfolio/static/media/slfw.e6391ac15b44fa9f4468.png",
@@ -94,11 +94,11 @@
     "static/media/thyneighbour.png": "/react-portfolio/static/media/thyneighbour.8c1749cd7187d5cc865e.png",
     "index.html": "/react-portfolio/index.html",
     "main.f7864627.css.map": "/react-portfolio/static/css/main.f7864627.css.map",
-    "main.d66d45cf.js.map": "/react-portfolio/static/js/main.d66d45cf.js.map",
+    "main.185fe9b4.js.map": "/react-portfolio/static/js/main.185fe9b4.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7864627.css",
-    "static/js/main.d66d45cf.js"
+    "static/js/main.185fe9b4.js"
   ]
 }
