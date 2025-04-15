@@ -126,6 +126,27 @@ const Experience = () => {
 
               </div>
             </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className='icon' />
+              <div>
+                <h4>Illustrator</h4>
+
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className='icon' />
+              <div>
+                <h4>After effect</h4>
+
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className='icon' />
+              <div>
+                <h4>hehe</h4>
+
+              </div>
+            </article>
           </div>
         </div>
       </div>
