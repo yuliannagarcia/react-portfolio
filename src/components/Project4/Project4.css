@@ -12,11 +12,22 @@
     margin-bottom: 2rem;
 }
 
-.project4 video {
+.project4 video{
     border-radius: 1rem;
-    width: 100%;
     margin-bottom: 5rem;
 }
+
+.desktop-video {
+    width: 65rem;
+}
+
+.tablet-video {
+    width: 60rem;
+}
+
+.mobile-video {
+    width: 25rem;
+}   
 
 /* Media Queries for small devices*/
 @media screen and (max-width: 600px) {}

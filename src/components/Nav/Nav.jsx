@@ -6,6 +6,7 @@ import { AiOutlineUser } from 'react-icons/ai';
 import { GiBrain } from 'react-icons/gi';
 import { AiOutlineFolderOpen } from 'react-icons/ai';
 import { MdOutlineMailOutline } from 'react-icons/md';
+import { HiOutlinePresentationChartLine } from "react-icons/hi";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#Header');
@@ -72,11 +73,12 @@ const Nav = () => {
 
   return (
     <nav>
-      <Link to="/" onClick={(event) => handleNavClick('#Header', event)} className={activeNav === '#Header' ? 'active' : ''}><AiOutlineHome /></Link>
-      <Link to="/" onClick={(event) => handleNavClick('#About', event)} className={activeNav === '#About' ? 'active' : ''}><AiOutlineUser /></Link>
-      <Link to="/" onClick={(event) => handleNavClick('#Experience', event)} className={activeNav === '#Experience' ? 'active' : ''}><GiBrain /></Link>
-      <Link to="/" onClick={(event) => handleNavClick('#Portfolio', event)} className={activeNav === '#Portfolio' ? 'active' : ''}><AiOutlineFolderOpen /></Link>
-      <Link to="/" onClick={(event) => handleNavClick('#Contact', event)} className={activeNav === '#Contact' ? 'active' : ''}><MdOutlineMailOutline /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Header', event)} className={activeNav === '#Header' ? 'active' : ''} title="Home"><AiOutlineHome /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#About', event)} className={activeNav === '#About' ? 'active' : ''} title="About"><AiOutlineUser /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Experience', event)} className={activeNav === '#Experience' ? 'active' : ''} title="Experience"><GiBrain /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Portfolio', event)} className={activeNav === '#Portfolio' ? 'active' : ''} title="Portfolio"><AiOutlineFolderOpen /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Slides', event)} className={activeNav === '#Slides' ? 'active' : ''} title="Slides"><HiOutlinePresentationChartLine /></Link>
+      <Link to="/" onClick={(event) => handleNavClick('#Contact', event)} className={activeNav === '#Contact' ? 'active' : ''} title="Contact"><MdOutlineMailOutline /></Link>
     </nav>
   );
 };
