@@ -538,6 +538,7 @@
     font-size: .8rem;
     color: var(--color-box);
     margin-top: 5rem;
+    padding-bottom: 6rem;
 }
 
 video {
@@ -696,6 +697,11 @@ video {
         height: auto;
         margin-left: 0;
     }
+
+    .conclusion{
+        margin-right: -2rem;
+        margin-left: 0rem;
+    }
 }
 
 
@@ -838,4 +844,8 @@ video {
         margin-left: 0;
     }
 
+    .conclusion{
+        margin-right: -2rem;
+        margin-left: 0rem;
+    }
 }
