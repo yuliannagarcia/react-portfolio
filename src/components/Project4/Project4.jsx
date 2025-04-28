@@ -3,7 +3,7 @@ import './Project4.css';
 import riverapearl from "../../Assets/rpvideo.mp4";
 import grunge from "../../Assets/grange.mp4";
 import atoy from "../../Assets/atoy.mp4";
-import sprint from "../../Assets/SPRINT_COVER.mp4";
+import sprint from "../../Assets/sprintCover.mp4";
 
 function Project4() {
   return (
