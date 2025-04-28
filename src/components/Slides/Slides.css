@@ -1,7 +1,6 @@
-.header__container {
-  
-}
-.slides{
-    padding-left: 12.5rem;
-    padding-right: 12.5rem;
+.slides__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }

@@ -16,7 +16,7 @@ const CTA = () => {
   return (
     <div className="cta">
       <a href={CV} download className='btn btn-primary'>Download CV</a>
-      <button onClick={handleScrollToContact} className='btn btn-primary'>Get in Contact</button>
+      <a onClick={handleScrollToContact} className='btn btn-primary'>Get in Contact</a>
     </div>
   );
 };

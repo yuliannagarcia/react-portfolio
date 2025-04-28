@@ -1,7 +1,7 @@
 .project4 {
     margin-top: 0;
-    padding-top: 3rem;
     min-height: 92vh;
+    padding-bottom: 3rem;
 }
 
 .project4 h2 {
@@ -10,8 +10,18 @@
     text-size-adjust: auto;
     margin: 0 auto;
     margin-bottom: 2rem;
+    padding-top: 5rem;
 }
-
+.project4_description {
+    width: 96%;
+    padding-bottom: 4rem;
+    display: block;
+    align-items: center;
+    border-radius: 1rem;
+    background: #c8e1f2;
+    padding: 2% 2% 2% 2%;
+    color: var(--color-box);
+}
 .project4 video{
     border-radius: 1rem;
     margin-bottom: 5rem;
