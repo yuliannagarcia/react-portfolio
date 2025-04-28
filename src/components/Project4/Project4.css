@@ -2,6 +2,10 @@
     margin-top: 0;
     min-height: 92vh;
     padding-bottom: 3rem;
+    display: flex; /* Add this to enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
 }
 
 .project4 h2 {
@@ -17,7 +21,6 @@
 .project4_description {
     width: 96%;
     padding-bottom: 4rem;
-    display: block;
     align-items: center;
     border-radius: 1rem;
     background: #c8e1f2;
@@ -43,19 +46,34 @@
 }
 
 /* Media Queries for tablets */
+@media screen and (max-width: 1024px) {
+    .project4 h2 {
+        font-size: 1.8rem; /* Slightly smaller font size for tablets */
+    }
+
+    .project4_description {
+        width: 100%; /* Adjust width for tablets */
+    }
+    
+    .desktop-video,
+    .tablet-video {
+        width: 100%; /* Make videos responsive for tablets */
+    }
+} 
+
+/* Media Queries for tablets */
 @media screen and (max-width: 768px) {
     .project4 h2 {
         font-size: 1.8rem; /* Slightly smaller font size for tablets */
     }
 
     .project4_description {
-        width: 90%; /* Adjust width for tablets */
-        padding: 3%; /* Adjust padding for better spacing */
+        width: 100%; /* Adjust width for tablets */
     }
 
     .desktop-video,
-    .tablet-video {
-        width: 90%; /* Make videos responsive for tablets */
+    .tablet-video{
+        width: 100%; /* Make videos responsive for tablets */
     }
 }
 
@@ -67,12 +85,10 @@
 
     .project4_description {
         width: 100%; /* Full width for mobile */
-        padding: 4%; /* Adjust padding for better spacing */
     }
 
     .desktop-video,
-    .tablet-video,
-    .mobile-video {
+    .tablet-video {
         width: 100%; /* Full width for mobile videos */
     }
 }

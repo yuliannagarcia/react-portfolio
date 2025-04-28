@@ -530,6 +530,7 @@
 }
 
 .conclusion {
+    width: 100vw;
     border-radius: 1rem;
     background: #106a8d00;
     padding: 2% 2% 2% 2%;
@@ -696,6 +697,10 @@ video {
         width: 100%;
         height: auto;
         margin-left: 0;
+    }
+
+    .conclusion {
+        width: 80%;
     }
 }
 

@@ -706,6 +706,7 @@ li {
 
 .conclusion {
     padding-bottom: 6rem;
+    width: 100vh;
 }
 
 /* General Styles */
@@ -1167,7 +1168,6 @@ li {
     .conclusion{
         margin-right: -2rem;
         margin-left: 0rem;
-        width: 115%;
     }
 
 }
@@ -1625,7 +1625,6 @@ li {
     .conclusion{
         margin-right: -2rem;
         margin-left: 0rem;
-        width: 115%;
     }
 
 }
