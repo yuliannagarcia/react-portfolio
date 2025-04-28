@@ -6,12 +6,14 @@
 
 .project4 h2 {
     text-align: center;
-    font-size: larger;
+    font-size: 2rem;
+    font-weight: 600;
     text-size-adjust: auto;
     margin: 0 auto;
     margin-bottom: 2rem;
     padding-top: 5rem;
 }
+
 .project4_description {
     width: 96%;
     padding-bottom: 4rem;
@@ -22,7 +24,8 @@
     padding: 2% 2% 2% 2%;
     color: var(--color-box);
 }
-.project4 video{
+
+.project4 video {
     border-radius: 1rem;
     margin-bottom: 5rem;
 }
@@ -37,10 +40,39 @@
 
 .mobile-video {
     width: 25rem;
-}   
+}
 
-/* Media Queries for small devices*/
-@media screen and (max-width: 600px) {}
+/* Media Queries for tablets */
+@media screen and (max-width: 768px) {
+    .project4 h2 {
+        font-size: 1.8rem; /* Slightly smaller font size for tablets */
+    }
 
-/* Media Queries for small small devices*/
-@media screen and (max-width: 415px) {}
+    .project4_description {
+        width: 90%; /* Adjust width for tablets */
+        padding: 3%; /* Adjust padding for better spacing */
+    }
+
+    .desktop-video,
+    .tablet-video {
+        width: 90%; /* Make videos responsive for tablets */
+    }
+}
+
+/* Media Queries for mobile devices */
+@media screen and (max-width: 480px) {
+    .project4 h2 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .project4_description {
+        width: 100%; /* Full width for mobile */
+        padding: 4%; /* Adjust padding for better spacing */
+    }
+
+    .desktop-video,
+    .tablet-video,
+    .mobile-video {
+        width: 100%; /* Full width for mobile videos */
+    }
+}

@@ -62,6 +62,30 @@ const Experience = () => {
         <div className="experience__frontend">
           <h3>Other</h3>
           <div className="experience__content">
+          <article className="experience__details">
+              <BsFillPatchCheckFill className='icon' />
+              <div>
+                <h4>Photoshop</h4>
+              </div>
+            </article>
+          <article className="experience__details">
+              <BsFillPatchCheckFill className='icon' />
+              <div>
+                <h4>Illustrator</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className='icon' />
+              <div>
+                <h4>After Effects</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className='icon' />
+              <div>
+                <h4>InDesign</h4>
+              </div>
+            </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className='icon' />
               <div>
@@ -72,72 +96,42 @@ const Experience = () => {
               <BsFillPatchCheckFill className='icon' />
               <div>
                 <h4>JavaScript</h4>
-
               </div>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className='icon' />
               <div>
                 <h4>CSS</h4>
-
               </div>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className='icon' />
               <div>
                 <h4>ReactJS</h4>
-
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='icon' />
-              <div>
-                <h4>Photoshop</h4>
-
               </div>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className='icon' />
               <div>
                 <h4>Flask</h4>
-
               </div>
             </article>
-
             <article className="experience__details">
               <BsFillPatchCheckFill className='icon' />
               <div>
                 <h4>Python</h4>
-
               </div>
             </article>
-
             <article className="experience__details">
               <BsFillPatchCheckFill className='icon' />
               <div>
                 <h4>MySQL</h4>
-
               </div>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className='icon' />
               <div>
                 <h4>GoLang</h4>
-
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='icon' />
-              <div>
-                <h4>Illustrator</h4>
-
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='icon' />
-              <div>
-                <h4>After effect</h4>
-
               </div>
             </article>
           </div>
