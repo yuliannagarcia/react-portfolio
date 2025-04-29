@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.6fd2e435.css",
-    "main.js": "/react-portfolio/static/js/main.3a75f89d.js",
+    "main.js": "/react-portfolio/static/js/main.4db5f3fa.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/registerPage.mp4": "/react-portfolio/static/media/registerPage.7d283fee7b98476cb0a1.mp4",
     "static/media/childDashboard.mp4": "/react-portfolio/static/media/childDashboard.9b3e864059c442c7790f.mp4",
@@ -53,6 +53,7 @@
     "static/media/ideation3.png": "/react-portfolio/static/media/ideation3.6f89f5c1526ae953d7cb.png",
     "static/media/pmfw.png": "/react-portfolio/static/media/pmfw.db3c2b2718b8f9d3eacf.png",
     "static/media/ideation2.png": "/react-portfolio/static/media/ideation2.c6c8acbdebee1b749331.png",
+    "static/media/Yulianna_Garcia_CV.pdf": "/react-portfolio/static/media/Yulianna_Garcia_CV.c071b65e8d74b2da516e.pdf",
     "static/media/ideation4.png": "/react-portfolio/static/media/ideation4.208884fa585e63a8c407.png",
     "static/media/mindmapping2.png": "/react-portfolio/static/media/mindmapping2.201c52ac7d47e40d938d.png",
     "static/media/monster-two-thirds-right.png": "/react-portfolio/static/media/monster-two-thirds-right.c86d7b74785e0b6f9b3e.png",
@@ -70,7 +71,6 @@
     "static/media/slfw.png": "/react-portfolio/static/media/slfw.e6391ac15b44fa9f4468.png",
     "static/media/CAScreenshot1.png": "/react-portfolio/static/media/CAScreenshot1.8b7cdbf575f554a72203.png",
     "static/media/Homelesslink.png": "/react-portfolio/static/media/Homelesslink.07b4f3a92bdbaf423f1d.png",
-    "static/media/Yulianna_Garcia_CV.pdf": "/react-portfolio/static/media/Yulianna_Garcia_CV.518d5888cd4d0756ec75.pdf",
     "static/media/hmfw.png": "/react-portfolio/static/media/hmfw.c9d4956a1d8b3bf8ac4e.png",
     "static/media/RedAnalysis1.png": "/react-portfolio/static/media/RedAnalysis1.549a019b5cead2e3fda6.png",
     "static/media/Colourchecker.png": "/react-portfolio/static/media/Colourchecker.44c16936c193fd6824a6.png",
@@ -97,11 +97,11 @@
     "static/media/thyneighbour.png": "/react-portfolio/static/media/thyneighbour.8c1749cd7187d5cc865e.png",
     "index.html": "/react-portfolio/index.html",
     "main.6fd2e435.css.map": "/react-portfolio/static/css/main.6fd2e435.css.map",
-    "main.3a75f89d.js.map": "/react-portfolio/static/js/main.3a75f89d.js.map",
+    "main.4db5f3fa.js.map": "/react-portfolio/static/js/main.4db5f3fa.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6fd2e435.css",
-    "static/js/main.3a75f89d.js"
+    "static/js/main.4db5f3fa.js"
   ]
 }
